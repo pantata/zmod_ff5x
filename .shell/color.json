@@ -7,6 +7,7 @@
     "it": "bianco",
     "es": "blanco",
     "pt": "branco",
+    "cs": "bílá",
     "zh": "白色",
     "ja": "白",
     "ko": "흰색"
@@ -19,6 +20,7 @@
     "it": "giallo brillante",
     "es": "amarillo brillante",
     "pt": "amarelo brilhante",
+    "cs": "žlutá",
     "zh": "亮黄色",
     "ja": "明るい黄色",
     "ko": "밝은 노란색"
@@ -31,6 +33,7 @@
     "it": "verde chiaro",
     "es": "verde claro",
     "pt": "verde claro",
+    "cs": "světle zelená",
     "zh": "浅绿色",
     "ja": "薄緑",
     "ko": "연두색"
@@ -43,6 +46,7 @@
     "it": "verde",
     "es": "verde",
     "pt": "verde",
+    "cs": "zelená",
     "zh": "绿色",
     "ja": "緑",
     "ko": "초록색"
@@ -55,6 +59,7 @@
     "it": "verde scuro",
     "es": "verde oscuro",
     "pt": "verde escuro",
+    "cs": "tmavě zelená",
     "zh": "深绿色",
     "ja": "濃い緑",
     "ko": "진한 녹색"
@@ -67,6 +72,7 @@
     "it": "ciano",
     "es": "cian",
     "pt": "ciano",
+    "cs": "azurová",
     "zh": "青绿色",
     "ja": "シアン",
     "ko": "청록색"
@@ -79,6 +85,7 @@
     "it": "turchese",
     "es": "turquesa",
     "pt": "turquesa",
+    "cs": "tyrkysová",
     "zh": "绿松石色",
     "ja": "ターコイズ",
     "ko": "터키석색"
@@ -91,6 +98,7 @@
     "it": "azzurro",
     "es": "azul claro",
     "pt": "azul claro",
+    "cs": "světle modrá",
     "zh": "天蓝色",
     "ja": "水色",
     "ko": "하늘색"
@@ -103,6 +111,7 @@
     "it": "blu",
     "es": "azul",
     "pt": "azul",
+    "cs": "modrá",
     "zh": "蓝色",
     "ja": "青",
     "ko": "파란색"
@@ -115,6 +124,7 @@
     "it": "blu scuro",
     "es": "azul oscuro",
     "pt": "azul escuro",
+    "cs": "tmavě modrá",
     "zh": "深蓝色",
     "ja": "濃い青",
     "ko": "진한 파란색"
@@ -127,6 +137,7 @@
     "it": "viola",
     "es": "morado",
     "pt": "roxo",
+    "cs": "fialová",
     "zh": "紫色",
     "ja": "紫",
     "ko": "보라색"
@@ -139,6 +150,7 @@
     "it": "viola brillante",
     "es": "morado brillante",
     "pt": "roxo brilhante",
+    "cs": "jasně fialová",
     "zh": "亮紫色",
     "ja": "明るい紫",
     "ko": "밝은 보라색"
@@ -151,6 +163,7 @@
     "it": "magenta",
     "es": "magenta",
     "pt": "magenta",
+    "cs": "magenta",
     "zh": "品红色",
     "ja": "マゼンタ",
     "ko": "자홍색"
@@ -163,6 +176,7 @@
     "it": "lilla",
     "es": "lila",
     "pt": "lilás",
+    "cs": "šeříková",
     "zh": "丁香色",
     "ja": "ライラック",
     "ko": "라일락색"
@@ -175,6 +189,7 @@
     "it": "rosa",
     "es": "rosa",
     "pt": "rosa",
+    "cs": "růžová",
     "zh": "粉色",
     "ja": "ピンク",
     "ko": "분홍색"
@@ -187,6 +202,7 @@
     "it": "rosso",
     "es": "rojo",
     "pt": "vermelho",
+    "cs": "červená",
     "zh": "红色",
     "ja": "赤",
     "ko": "빨간색"
@@ -199,6 +215,7 @@
     "it": "marrone",
     "es": "marrón",
     "pt": "marrom",
+    "cs": "hnědá",
     "zh": "棕色",
     "ja": "茶色",
     "ko": "갈색"
@@ -211,6 +228,7 @@
     "it": "arancione",
     "es": "naranja",
     "pt": "laranja",
+    "cs": "oranžová",
     "zh": "橙色",
     "ja": "オレンジ",
     "ko": "주황색"
@@ -223,6 +241,7 @@
     "it": "beige",
     "es": "beige",
     "pt": "bege",
+    "cs": "béžová",
     "zh": "米色",
     "ja": "ベージュ",
     "ko": "베이지색"
@@ -235,6 +254,7 @@
     "it": "marrone chiaro",
     "es": "marrón claro",
     "pt": "marrom claro",
+    "cs": "světle hnědá",
     "zh": "浅棕色",
     "ja": "薄茶色",
     "ko": "연한 갈색"
@@ -247,6 +267,7 @@
     "it": "terracotta",
     "es": "terracota",
     "pt": "terracota",
+    "cs": "terakotová",
     "zh": "陶土色",
     "ja": "テラコッタ",
     "ko": "테라코타색"
@@ -259,6 +280,7 @@
     "it": "grigio",
     "es": "gris",
     "pt": "cinza",
+    "cs": "šedá",
     "zh": "灰色",
     "ja": "灰色",
     "ko": "회색"
@@ -271,6 +293,7 @@
     "it": "grigio chiaro",
     "es": "gris claro",
     "pt": "cinza claro",
+    "cs": "světle šedá",
     "zh": "浅灰色",
     "ja": "薄灰色",
     "ko": "연한 회색"
@@ -283,6 +306,7 @@
     "it": "nero",
     "es": "negro",
     "pt": "preto",
+    "cs": "černá",
     "zh": "黑色",
     "ja": "黒",
     "ko": "검은색"
