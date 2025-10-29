@@ -1,0 +1,360 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: buildroot 2024.11.2\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-04-16 14:44+0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid " A-Z"
+msgstr " A–Z"
+
+msgid " Changed"
+msgstr " Změněno"
+
+msgid " Refresh"
+msgstr " Obnovit"
+
+msgid " Waiting for the Klipper launch..."
+msgstr " Čeká se na spuštění Klipperu..."
+
+msgid "%Y-%m-%d %H:%M"
+msgstr "%d.%m.%Y %H:%M"
+
+msgid "(Unknown)"
+msgstr "(Neznámé)"
+
+msgid "Acceleration (mm/s2)"
+msgstr "Zrychlení (mm/s²)"
+
+msgid "Acceleration to Deceleration (mm/s2)"
+msgstr "Zrychlení na zpomalení (mm/s²)"
+
+msgid "Algorithm"
+msgstr "Algoritmus"
+
+msgid "Attention!"
+msgstr "Pozor!"
+
+msgid "Back"
+msgstr "Zpět"
+
+msgid "Bed"
+msgstr "Tisk. plocha"
+
+msgid "Bed Mesh"
+msgstr "Síť lože"
+
+msgid "Belts/Shake"
+msgstr "Řemeny/Chvění"
+
+msgid "Best shaper is {} @ {:.2f} Hz\n"
+msgstr "Nejlepší shaper je {} @ {:.2f} Hz\n"
+
+msgid "Brightness"
+msgstr "Jas"
+
+msgid "Calibrate"
+msgstr "Kalibrovat"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Change WEB"
+msgstr "Změnit WEB"
+
+msgid "Clean"
+msgstr "Vyčistit"
+
+msgid "Clear nozzle"
+msgstr "Vyčistit trysku"
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "Cold"
+msgstr "Studený"
+
+msgid "Configuration change detected"
+msgstr "Zjištěna změna konfigurace"
+
+msgid "Cool down"
+msgstr "Ochladit"
+
+msgid "Do you want to cancel the print?"
+msgstr "Chcete zrušit tisk?"
+
+msgid "Do you want to emergency stop?"
+msgstr "Nouzové zastavení?"
+
+msgid "Do you want to make an emergency stop?"
+msgstr "Chcete provést nouzové zastavení?"
+
+msgid ""
+"ETA: {}\n"
+"Status: {}"
+msgstr ""
+"ETA: {}\n"
+"Stav: {}"
+
+msgid "Emergency printer shutdown?"
+msgstr "Nouzové vypnutí tiskárny?"
+
+msgid "Emergency stop confirmation"
+msgstr "Potvrzení nouzového zastavení"
+
+msgid "Excitate"
+msgstr "Excitovat"
+
+msgid "Extrude"
+msgstr "Extrudovat"
+
+msgid "Extruder"
+msgstr "Extruder"
+
+msgid "Extruder temperature"
+msgstr "Teplota extruderu"
+
+msgid "Extrusion length"
+msgstr "Délka extruze"
+
+msgid "Fans"
+msgstr "Ventilátory"
+
+msgid "Fine Tune"
+msgstr "Jemné doladění"
+
+msgid "Firmware Restart"
+msgstr "Restart firmwaru"
+
+msgid "Flow Reset"
+msgstr "Reset průtoku"
+
+msgid "Flow+"
+msgstr "Průtok+"
+
+msgid "Flow-"
+msgstr "Průtok-"
+
+msgid "Frequency"
+msgstr "Frekvence"
+
+msgid "Graph"
+msgstr "Graf"
+
+msgid "Guppy Restart"
+msgstr "Restart Guppy"
+
+msgid "Home"
+msgstr "Domů"
+
+msgid "Homing"
+msgstr "Homing"
+
+msgid "Internal circulation"
+msgstr "Vnitřní cirkulace"
+
+msgid "Klipper Restart"
+msgstr "Restart Klipperu"
+
+msgid "Limits"
+msgstr "Limity"
+
+msgid "Load"
+msgstr "Načíst"
+
+msgid "Load Cell"
+msgstr "Snímač zatížení"
+
+msgid "Log level"
+msgstr "Úroveň logu"
+
+msgid "Macro"
+msgstr "Makro"
+
+msgid "Max"
+msgstr "Max"
+
+msgid "Motor off"
+msgstr "Vypnout motor"
+
+msgid "Multipler Step"
+msgstr "Multipler Step"
+
+msgid "Name"
+msgstr "Název"
+
+msgid "Native screen"
+msgstr "Orig. displej"
+
+msgid "Network"
+msgstr "Síť"
+
+msgid "Off"
+msgstr "Vypnuto"
+
+msgid "PID Bed"
+msgstr "PID lože"
+
+msgid "PID Extruder"
+msgstr "PID extruderu"
+
+msgid "Pause"
+msgstr "Pozastavit"
+
+msgid "Power Off"
+msgstr "Vypnout napájení"
+
+msgid "Print"
+msgstr "Tisk"
+
+msgid "Printing..."
+msgstr "Tiskne..."
+
+msgid "Queue"
+msgstr "Fronta"
+
+msgid "Range"
+msgstr "Rozsah"
+
+msgid "Refresh"
+msgstr "Obnovit"
+
+msgid ""
+"Remain\n"
+"Length"
+msgstr ""
+"Zbývá\n"
+"Délka"
+
+msgid ""
+"Remain\n"
+"Weight"
+msgstr ""
+"Zbývá\n"
+"Hmotnost"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Reset PA"
+msgstr "Reset PA"
+
+msgid "Reset Z"
+msgstr "Reset Z"
+
+msgid "Restore Print"
+msgstr "Obnovit tisk"
+
+msgid "Resume"
+msgstr "Pokračovat"
+
+msgid "Retract"
+msgstr "Retrakce"
+
+msgid "Retract Length"
+msgstr "Délka retrakce"
+
+msgid "Retract Speed"
+msgstr "Rychlost retrakce"
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "Saving the profile will restart the printer."
+msgstr "Uložení profilu restartuje tiskárnu."
+
+msgid "Screen off"
+msgstr "Vypnout displej"
+
+msgid "Screw adjustment"
+msgstr "Seřízení šroubů"
+
+msgid "Shake Belts"
+msgstr "Chvění řemenů"
+
+msgid "Show Archived"
+msgstr "Zobrazit archív"
+
+msgid "Show Hidden"
+msgstr "Zobrazit skryté"
+
+msgid "Show task"
+msgstr "Zobrazit úlohu"
+
+msgid "Speed Reset"
+msgstr "Reset rychlosti"
+
+msgid "Speed+"
+msgstr "Rychlost+"
+
+msgid "Speed-"
+msgstr "Rychlost-"
+
+msgid "Square Corner Velocity (mm/s)"
+msgstr "Rychlost v rozích (mm/s)"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "Stop"
+msgstr "Zastavit"
+
+msgid "Stop circulation"
+msgstr "Zastavit cirkulaci"
+
+msgid "System"
+msgstr "Systém"
+
+msgid "Travel distance (mm)"
+msgstr "Vzdálenost pohybu (mm)"
+
+msgid "Unload"
+msgstr "Vysunout"
+
+msgid "Unretract Extra Length"
+msgstr "Extra délka (unretract)"
+
+msgid "Unretract Speed"
+msgstr "Rychlost (unretract)"
+
+msgid "Velocity (mm/s)"
+msgstr "Rychlost (mm/s)"
+
+msgid "Weight"
+msgstr "Hmotnost"
+
+msgid ""
+"Weight: {} г|{}\n"
+"Time: {}\n"
+"Size: {} MB"
+msgstr ""
+"Hmotnost: {} g|{}\n"
+"Čas: {}\n"
+"Velikost: {} MB"
+
+msgid "X Frequency Response"
+msgstr "Frekvenční odezva X"
+
+msgid "Y Frequency Response"
+msgstr "Frekvenční odezva Y"
+
+msgid "д "
+msgstr "d "
+
+msgid "м "
+msgstr "min "
+
+msgid "мм"
+msgstr "mm"
+
+msgid "с"
+msgstr "s"
+
+msgid "ч "
+msgstr "h "
