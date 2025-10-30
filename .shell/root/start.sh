@@ -158,7 +158,7 @@ if [ ${FF5X} -eq 0 ]; then
     fi
 fi
 
-# Создаем каталоги под плагины
+# Creating directories for plugins
 grep '/root/printer_data/config/mod_data/plugins/' /opt/config/moonraker.conf /opt/config/mod_data/user.moonraker.conf | sed 's|/$||' | sed 's|.*/||' | \
 while read a; do
     echo "Plugin $a"
@@ -172,16 +172,16 @@ while read a; do
             branch=$(get_branch_from_config ${MOD_CONF}/mod_data/user.moonraker.conf "$a")
         fi
         if [ "$url" != "" ] && [ "$branch" != "" ]; then
-            echo "Инициализирую репозиторий"
+            echo "Initialising the repository"
             mkdir -p "${MOD_CONF}/mod_data/plugins/$a/"
             sqlite3 /opt/config/mod_data/database/moonraker-sql.db \
             "DELETE FROM namespace_store WHERE namespace = 'update_manager' AND key = '$a'; \
              INSERT INTO namespace_store (namespace, key, value) VALUES ('update_manager', '$a', '{\"last_config_hash\":\"?\",\"last_refresh_time\":0.0,\"is_valid\":false,\"pip_version_info\":null,\"repo_valid\":false,\"git_owner\":\"none\",\"git_repo_name\":\"$a\",\"git_remote\":\"origin\",\"git_branch\":\"$branch\",\"current_version\":\"0.0.0.0\",\"upstream_version\":\"0.0.0.0\",\"current_commit\":\"?\",\"upstream_commit\":\"?\",\"rollback_commit\":\"?\",\"rollback_branch\":\"$branch\",\"rollback_version\":\"0.0.0.0\",\"upstream_url\":\"$url\",\"recovery_url\":\"$url\",\"branches\":[\"$branch\"],\"head_detached\":false,\"git_messages\":[],\"commits_behind\":[],\"cbh_count\":0,\"diverged\":false,\"corrupt\":true,\"modified_files\":[],\"untracked_files\":[],\"pinned_commit_valid\":true}');"
         else
-            echo "Не найден url=$url или branch=$branh для $a. Пропускаю."
+            echo "Not found url=$url or branch=$branch for $a. Skipping."
         fi
     else
-        echo "Репозиторий $a уже  существует, пропускаю."
+        echo "The repository $a already exists, so I'll skip it."
     fi
 done
 
