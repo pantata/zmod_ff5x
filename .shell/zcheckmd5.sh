@@ -164,6 +164,7 @@ else
     fi
     check_link ${MOD_CONF}/mod/motion_sensor.cfg config/motion_sensor.cfg &>/dev/null
     check_link ${MOD_CONF}/mod/switch_sensor_display_off.cfg config/switch_sensor_display_off.cfg &>/dev/null
-
+    check_link ${MOD_CONF}/mod/language.cfg lang/${ZLANG}.cfg &>/dev/null
+    
     [ ${ZLANG} != 'ru' ] && echo "ZMOD self-test completed" || echo "Самопроверка ZMOD окончена"
 fi
