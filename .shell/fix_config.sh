@@ -260,7 +260,7 @@ fix_config()
     fi
     check_link ${MOD_CONF}/mod/motion_sensor.cfg config/motion_sensor.cfg
     check_link ${MOD_CONF}/mod/switch_sensor_display_off.cfg config/switch_sensor_display_off.cfg
-    check_link ${MOD_CONF}/mod/language.cfg lang/${ZLANG}.cfg &>/dev/null
+    check_link ${MOD_CONF}/mod/language.yml lang/${ZLANG}.yml &>/dev/null
     
     if [ ${FF5X} -eq 1 ]; then
         # В Версии 1.0.7 перенесли конфиг в /usr/prog/config/
