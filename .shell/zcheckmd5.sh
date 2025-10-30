@@ -156,14 +156,14 @@ else
         check_link ${MOD_CONF}/mod/ff5.cfg ${ZLANG}/ff5.cfg &>/dev/null
         check_link ${MOD_CONF}/mod/mod.cfg ${ZLANG}/mod.cfg &>/dev/null
     else
-        check_link ${MOD_CONF}/mod/klipper13.cfg ${ZLANG}/klipper13_ad5x.cfg &>/dev/null
-        check_link ${MOD_CONF}/mod/display_off.cfg ${ZLANG}/ad5x_display_off.cfg &>/dev/null
-        check_link ${MOD_CONF}/mod/base_display_off.cfg ${ZLANG}/display_off.cfg &>/dev/null
-        check_link ${MOD_CONF}/mod/ad5x.cfg ${ZLANG}/ad5x.cfg &>/dev/null
-        check_link ${MOD_CONF}/mod/base_mod.cfg ${ZLANG}/mod.cfg &>/dev/null
+        check_link ${MOD_CONF}/mod/klipper13.cfg config/klipper13_ad5x.cfg &>/dev/null
+        check_link ${MOD_CONF}/mod/display_off.cfg config/ad5x_display_off.cfg &>/dev/null
+        check_link ${MOD_CONF}/mod/base_display_off.cfg config/display_off.cfg &>/dev/null
+        check_link ${MOD_CONF}/mod/ad5x.cfg config/ad5x.cfg &>/dev/null
+        check_link ${MOD_CONF}/mod/base_mod.cfg config/mod.cfg &>/dev/null
     fi
-    check_link ${MOD_CONF}/mod/motion_sensor.cfg ${ZLANG}/motion_sensor.cfg &>/dev/null
-    check_link ${MOD_CONF}/mod/switch_sensor_display_off.cfg ${ZLANG}/switch_sensor_display_off.cfg &>/dev/null
+    check_link ${MOD_CONF}/mod/motion_sensor.cfg config/motion_sensor.cfg &>/dev/null
+    check_link ${MOD_CONF}/mod/switch_sensor_display_off.cfg config/switch_sensor_display_off.cfg &>/dev/null
 
     [ ${ZLANG} != 'ru' ] && echo "ZMOD self-test completed" || echo "Самопроверка ZMOD окончена"
 fi

@@ -240,9 +240,9 @@ fix_config()
     echo "[zmod]
     language: ${ZLANG}" >${MOD_CONF}/mod_data/lang.cfg
 
-    check_link ${MOD_CONF}/mod/base.cfg ${ZLANG}/base.cfg
-    check_link ${MOD_CONF}/mod/client.cfg ${ZLANG}/client.cfg
-    check_link ${MOD_CONF}/mod/klipper13_base.cfg ${ZLANG}/klipper13_base.cfg
+    check_link ${MOD_CONF}/mod/base.cfg config/base.cfg
+    check_link ${MOD_CONF}/mod/client.cfg config/client.cfg
+    check_link ${MOD_CONF}/mod/klipper13_base.cfg config/klipper13_base.cfg
     check_link ${MOD_CONF}/.theme mod/.shell/.theme
     if [ ${FF5X} -eq 0 ]; then
         check_link ${MOD_CONF}/mod/klipper13.cfg ${ZLANG}/klipper13_ff5m.cfg
@@ -251,14 +251,14 @@ fix_config()
         check_link ${MOD_CONF}/mod/ff5.cfg ${ZLANG}/ff5.cfg
         check_link ${MOD_CONF}/mod/mod.cfg ${ZLANG}/mod.cfg
     else
-        check_link ${MOD_CONF}/mod/klipper13.cfg ${ZLANG}/klipper13_ad5x.cfg
-        check_link ${MOD_CONF}/mod/display_off.cfg ${ZLANG}/ad5x_display_off.cfg
-        check_link ${MOD_CONF}/mod/ad5x.cfg ${ZLANG}/ad5x.cfg
-        check_link ${MOD_CONF}/mod/base_display_off.cfg ${ZLANG}/display_off.cfg
-        check_link ${MOD_CONF}/mod/base_mod.cfg ${ZLANG}/mod.cfg
+        check_link ${MOD_CONF}/mod/klipper13.cfg config/klipper13_ad5x.cfg
+        check_link ${MOD_CONF}/mod/display_off.cfg config/ad5x_display_off.cfg
+        check_link ${MOD_CONF}/mod/ad5x.cfg config/ad5x.cfg
+        check_link ${MOD_CONF}/mod/base_display_off.cfg config/display_off.cfg
+        check_link ${MOD_CONF}/mod/base_mod.cfg config/mod.cfg
     fi
-    check_link ${MOD_CONF}/mod/motion_sensor.cfg ${ZLANG}/motion_sensor.cfg
-    check_link ${MOD_CONF}/mod/switch_sensor_display_off.cfg ${ZLANG}/switch_sensor_display_off.cfg
+    check_link ${MOD_CONF}/mod/motion_sensor.cfg config/motion_sensor.cfg
+    check_link ${MOD_CONF}/mod/switch_sensor_display_off.cfg config/switch_sensor_display_off.cfg
 
     if [ ${FF5X} -eq 1 ]; then
         # В Версии 1.0.7 перенесли конфиг в /usr/prog/config/
