@@ -260,8 +260,8 @@ fix_config()
     fi
     check_link ${MOD_CONF}/mod/motion_sensor.cfg config/motion_sensor.cfg
     check_link ${MOD_CONF}/mod/switch_sensor_display_off.cfg config/switch_sensor_display_off.cfg
-    check_link ${MOD_CONF}/mod/language.yml lang/${ZLANG}.yml &>/dev/null
-    
+    check_link ${MOD_CONF}/mod/zmod_locale.yml locale/${ZLANG}.yml &>/dev/null
+
     if [ ${FF5X} -eq 1 ]; then
         # В Версии 1.0.7 перенесли конфиг в /usr/prog/config/
         [ -d /usr/prog/config/mod ] && rm -rf /usr/prog/config/mod
@@ -380,7 +380,7 @@ unset LD_PRELOAD
         grep -q "Zcontrol 1.18" ${KLIPPER_DIR}/klippy/extras/spi_temperature.py || cp ${MOD_CONF}/mod/.shell/spi_temperature.py ${KLIPPER_DIR}/klippy/extras/spi_temperature.py
         grep -q "zmod 1.0" /opt/klipper/start.sh || cp ${MOD_CONF}/mod/.shell/start.sh /opt/klipper/start.sh
     else
-        grep -q "zmod 1.4" ${KLIPPER_DIR}/klippy/extras/virtual_sdcard.py || cp ${MOD_CONF}/mod/.shell/virtual_sdcard.py ${KLIPPER_DIR}/klippy/extras/virtual_sdcard.py
+        grep -q "zmod 1.5" ${KLIPPER_DIR}/klippy/extras/virtual_sdcard.py || cp ${MOD_CONF}/mod/.shell/virtual_sdcard.py ${KLIPPER_DIR}/klippy/extras/virtual_sdcard.py
     fi
 
     check_link ${KLIPPER_DIR}/klippy/extras/zmod.py ${MOD_CONF}/mod/.shell/zmod.py

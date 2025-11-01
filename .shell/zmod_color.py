@@ -4,7 +4,7 @@ import requests
 import logging
 import subprocess
 
-FFCONFIG='/usr/data/config/Adventurer5M.json'
+FFCONFIG='/usr/prog/config/Adventurer5M.json'
 FILE_CONFIG='/usr/data/config/mod_data/file.json'
 COLOR_CONFIG = '/usr/data/config/mod_data/color.json'
 
@@ -519,8 +519,11 @@ class zmod_color:
             config["FFMInfo"][f"ffmColor{zslot}"] = zcolor
             config["FFMInfo"][f"ffmType{zslot}"] = ztype
 
-            with open(FFCONFIG, 'w') as file:
-                return 200, json.dump(config, file, indent=2)
+            with open(FFCONFIG, 'w', encoding='utf-8') as file:
+                json_string = json.dumps(config, indent='\t')
+                formatted_json_string = re.sub(r'(":)', r'" : ', json_string)
+                file.write(formatted_json_string)
+                return 200, formatted_json_string
 
         return 500, "Error"
 
@@ -611,8 +614,10 @@ class zmod_color:
                 if not self.display:
                     self.zmod_ifs.set_cur_port(zslot)
 
-                with open(FFCONFIG, 'w') as file:
-                    json.dump(config, file, indent=2)
+                with open(FFCONFIG, 'w', encoding='utf-8') as file:
+                    json_string = json.dumps(config, indent='\t')
+                    formatted_json_string = re.sub(r'(":)', r'" : ', json_string)
+                    file.write(formatted_json_string)
                     gcmd.respond_raw(f"Extruder: {zslot}")
 
     def cmd_GET_ZCOLOR(self, gcmd):
@@ -861,6 +866,7 @@ class zmod_color:
     def cmd_CHANGE_FILAMENT(self, gcmd):
         channel = gcmd.get_int('CHANNEL', None)
         restore = gcmd.get_int('RESTORE', 1)
+
         if channel is None:
             raise gcmd.error("Error: CHANNEL parameter is required")
             return

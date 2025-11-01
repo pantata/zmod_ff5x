@@ -1,0 +1,1087 @@
+Total changes: 271
+================================================================================
+
+Line: 59
+Key: MSG_USING_KAMP
+Original: Using KAMP
+--------------------------------------------------------------------------------
+Line: 62
+Key: MSG_USING_BED_MESH_C
+Original: Using BED_MESH_CALIBRATE
+--------------------------------------------------------------------------------
+Line: 119
+Key: MSG_ERROR_FILE_FILEN
+Original: Error: File '{filename}' was not verified in time. Print canceled.
+--------------------------------------------------------------------------------
+Line: 124
+Key: MSG_ERROR_FILE_FIL_1
+Original: Error: File '{filename}' not specified. Print canceled.
+--------------------------------------------------------------------------------
+Line: 129
+Key: MSG_ERROR_FILE_FIL_2
+Original: Error: File {filename} not found. Print canceled.
+--------------------------------------------------------------------------------
+Line: 134
+Key: MSG_FILE_FILENAME_HA
+Original: File {filename} has no MD5 checksum. Enable it in Orca. https://github.com/ghzserg/zmod/wiki/Recomendations_en
+--------------------------------------------------------------------------------
+Line: 138
+Key: MSG_FILE_FILENAME_CO
+Original: File {filename} contains arc commands (G2, G3). Disable them. In Orca: Process Profile -> Arc Approximation -> Uncheck
+--------------------------------------------------------------------------------
+Line: 139
+Key: MSG_REPLACE_SPIRAL_1
+Original: Replace Spiral/Auto Z-Hop. In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped
+--------------------------------------------------------------------------------
+Line: 141
+Key: MSG_FILE_FILENAME_VE
+Original: File {filename} verified successfully. MD5 checksum matches.
+--------------------------------------------------------------------------------
+Line: 145
+Key: MSG_FILE_FILENAME_US
+Original: File {filename} uses unsupported G17/G18/G19 commands. Replace Z-Hop type.
+--------------------------------------------------------------------------------
+Line: 146
+Key: MSG_IN_ORCA_PRINTE_1
+Original: In Orca: Printer Profile -> Extruder 1 -> Z Hop Type -> Set to Normal or Sloped
+--------------------------------------------------------------------------------
+Line: 148
+Key: MSG_FILE_FILENAME_1
+Original: File {filename} verified successfully. MD5 checksum matches.
+--------------------------------------------------------------------------------
+Line: 151
+Key: MSG_FILE_FILENAME_2
+Original: File {filename} verified successfully. MD5 checksum matches.
+--------------------------------------------------------------------------------
+Line: 154
+Key: MSG_FILE_FILENAME_MD
+Original: File {filename} MD5 mismatch. File deleted. Print canceled
+--------------------------------------------------------------------------------
+Line: 159
+Key: MSG_FILE_FILENAME_3
+Original: File {filename} MD5 mismatch. Print canceled
+--------------------------------------------------------------------------------
+Line: 174
+Key: MSG_BEFORE_MEASUREME
+Original: Before measurements, don't forget to clean the nozzle with CLEAR_NOZZLE macro
+--------------------------------------------------------------------------------
+Line: 195
+Key: MSG_BED_CALIBRATION
+Original: Bed calibration. Profile {profile}. Extruder temp: {extruder_temp} / Bed temp: {bed_temp}
+--------------------------------------------------------------------------------
+Line: 290
+Key: MSG_LOADING_FILAME_1
+Original: Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s
+--------------------------------------------------------------------------------
+Line: 359
+Key: MSG_ACTIONPROMPT_BEG
+Original: action:prompt_begin Material selection
+--------------------------------------------------------------------------------
+Line: 360
+Key: MSG_ACTIONPROMPT_TEX
+Original: action:prompt_text Select material to load
+--------------------------------------------------------------------------------
+Line: 361
+Key: MSG_ACTIONPROMPT_BUT
+Original: action:prompt_button_group_start
+--------------------------------------------------------------------------------
+Line: 362
+Key: MSG_ACTIONPROMPT_B_1
+Original: action:prompt_button PLA|_LOAD_MATERIAL_HEATUP TEMP=210|primary
+--------------------------------------------------------------------------------
+Line: 363
+Key: MSG_ACTIONPROMPT_B_2
+Original: action:prompt_button PETG|_LOAD_MATERIAL_HEATUP TEMP=240|primary
+--------------------------------------------------------------------------------
+Line: 364
+Key: MSG_ACTIONPROMPT_B_3
+Original: action:prompt_button ABS|_LOAD_MATERIAL_HEATUP TEMP=250|primary
+--------------------------------------------------------------------------------
+Line: 365
+Key: MSG_ACTIONPROMPT_B_4
+Original: action:prompt_button_group_end
+--------------------------------------------------------------------------------
+Line: 366
+Key: MSG_ACTIONPROMPT_FOO
+Original: action:prompt_footer_button Cancel|_LOAD_MATERIAL_END
+--------------------------------------------------------------------------------
+Line: 367
+Key: MSG_ACTIONPROMPT_SHO
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 383
+Key: MSG_ACTIONPROMPT_B_5
+Original: action:prompt_begin Filament management
+--------------------------------------------------------------------------------
+Line: 384
+Key: MSG_ACTIONPROMPT_T_1
+Original: action:prompt_text Select action
+--------------------------------------------------------------------------------
+Line: 385
+Key: MSG_ACTIONPROMPT_B_6
+Original: action:prompt_button_group_start
+--------------------------------------------------------------------------------
+Line: 386
+Key: MSG_ACTIONPROMPT_B_7
+Original: action:prompt_button Load|LOAD_FILAMENT|primary
+--------------------------------------------------------------------------------
+Line: 387
+Key: MSG_ACTIONPROMPT_B_8
+Original: action:prompt_button Unload|UNLOAD_FILAMENT|primary
+--------------------------------------------------------------------------------
+Line: 388
+Key: MSG_ACTIONPROMPT_B_9
+Original: action:prompt_button Purge|PURGE_FILAMENT|primary
+--------------------------------------------------------------------------------
+Line: 389
+Key: MSG_ACTIONPROMPT_10
+Original: action:prompt_button_group_end
+--------------------------------------------------------------------------------
+Line: 390
+Key: MSG_ACTIONPROMPT_F_1
+Original: action:prompt_footer_button OK|_LOAD_MATERIAL_END
+--------------------------------------------------------------------------------
+Line: 391
+Key: MSG_ACTIONPROMPT_S_1
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 395
+Key: MSG_ACTIONPROMPT_END
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 408
+Key: MSG_NOZZLE_TEMPERATU
+Original: Nozzle temperature {extruder_temp}
+--------------------------------------------------------------------------------
+Line: 412
+Key: MSG_ACTIONPROMPT_11
+Original: action:prompt_begin Filament Change
+--------------------------------------------------------------------------------
+Line: 413
+Key: MSG_ACTIONPROMPT_T_2
+Original: action:prompt_text Filament change requested. Load new filament and click 'Resume'.
+--------------------------------------------------------------------------------
+Line: 414
+Key: MSG_ACTIONPROMPT_12
+Original: action:prompt_button_group_start
+--------------------------------------------------------------------------------
+Line: 415
+Key: MSG_ACTIONPROMPT_13
+Original: action:prompt_button Load|LOAD_FILAMENT|primary
+--------------------------------------------------------------------------------
+Line: 416
+Key: MSG_ACTIONPROMPT_14
+Original: action:prompt_button Unload|UNLOAD_FILAMENT|primary
+--------------------------------------------------------------------------------
+Line: 417
+Key: MSG_ACTIONPROMPT_15
+Original: action:prompt_button Purge|PURGE_FILAMENT|primary
+--------------------------------------------------------------------------------
+Line: 418
+Key: MSG_ACTIONPROMPT_16
+Original: action:prompt_button_group_end
+--------------------------------------------------------------------------------
+Line: 419
+Key: MSG_ACTIONPROMPT_F_2
+Original: action:prompt_footer_button Resume|_INTERACTIVE_LOAD_END
+--------------------------------------------------------------------------------
+Line: 420
+Key: MSG_ACTIONPROMPT_S_2
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 424
+Key: MSG_ACTIONPROMPT_E_1
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 438
+Key: MSG_ACTIONPROMPT_17
+Original: action:prompt_begin Shutdown printer?
+--------------------------------------------------------------------------------
+Line: 439
+Key: MSG_ACTIONPROMPT_T_3
+Original: action:prompt_text Shutdown printer?
+--------------------------------------------------------------------------------
+Line: 440
+Key: MSG_ACTIONPROMPT_18
+Original: action:prompt_button_group_start
+--------------------------------------------------------------------------------
+Line: 441
+Key: MSG_ACTIONPROMPT_19
+Original: action:prompt_button Yes|SHUTDOWN|primary
+--------------------------------------------------------------------------------
+Line: 442
+Key: MSG_ACTIONPROMPT_20
+Original: action:prompt_button_group_end
+--------------------------------------------------------------------------------
+Line: 443
+Key: MSG_ACTIONPROMPT_F_3
+Original: action:prompt_footer_button Cancel|RESPOND TYPE=command MSG=action:prompt_end
+--------------------------------------------------------------------------------
+Line: 444
+Key: MSG_ACTIONPROMPT_S_3
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 452
+Key: MSG_ACTIONPROMPT_E_2
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 516
+Key: MSG_ACTIONPROMPT_21
+Original: action:prompt_begin Temporary ZMOD disable
+--------------------------------------------------------------------------------
+Line: 517
+Key: MSG_ACTIONPROMPT_T_4
+Original: action:prompt_text After clicking OK the printer will be powered off
+--------------------------------------------------------------------------------
+Line: 518
+Key: MSG_ACTIONPROMPT_T_5
+Original: action:prompt_text You need to disconnect power cord and then reconnect it
+--------------------------------------------------------------------------------
+Line: 519
+Key: MSG_ACTIONPROMPT_T_6
+Original: action:prompt_text Printer will boot into stock firmware
+--------------------------------------------------------------------------------
+Line: 520
+Key: MSG_ACTIONPROMPT_F_4
+Original: action:prompt_footer_button OK|SKIP_ZMOD MUTE=1
+--------------------------------------------------------------------------------
+Line: 521
+Key: MSG_ACTIONPROMPT_S_4
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 523
+Key: MSG_ACTIONPROMPT_E_3
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 558
+Key: MSG_DO_NOT_DISABLE_D
+Original: Do not disable display if you don't fully understand bed leveling, z-offset and START_PRINT/END_PRINT macros
+--------------------------------------------------------------------------------
+Line: 559
+Key: MSG_HTTPSGITHUBCOMGH
+Original: https://github.com/ghzserg/zmod/wiki/FAQ_en
+--------------------------------------------------------------------------------
+Line: 562
+Key: MSG_LOADING_GUPPYSCR
+Original: Loading GuppyScreen
+--------------------------------------------------------------------------------
+Line: 564
+Key: MSG_USE_ZOFFSET_LOAD
+Original: Use Z-OFFSET loading from global parameters to control Z-OFFSET with GuppyScreen
+--------------------------------------------------------------------------------
+Line: 565
+Key: MSG_SAVE_ZMOD_DATA_L
+Original: SAVE_ZMOD_DATA LOAD_ZOFFSET=1
+--------------------------------------------------------------------------------
+Line: 605
+Key: MSG_DISABLE_CAMERA_O
+Original: Disable camera on printer screen
+--------------------------------------------------------------------------------
+Line: 612
+Key: MSG_ENABLE_CAMERA_ON
+Original: Enable camera on printer screen
+--------------------------------------------------------------------------------
+Line: 644
+Key: MSG_ACTIONPROMPT_22
+Original: action:prompt_begin After macro execution press Ctrl + F5
+--------------------------------------------------------------------------------
+Line: 645
+Key: MSG_ACTIONPROMPT_T_7
+Original: action:prompt_text After macro execution press Ctrl + F5
+--------------------------------------------------------------------------------
+Line: 646
+Key: MSG_ACTIONPROMPT_F_5
+Original: action:prompt_footer_button OK|WEB MUTE=1
+--------------------------------------------------------------------------------
+Line: 647
+Key: MSG_ACTIONPROMPT_S_5
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 649
+Key: MSG_ACTIONPROMPT_E_4
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 693
+Key: MSG_WORK_COMPLETED
+Original: Work completed
+--------------------------------------------------------------------------------
+Line: 723
+Key: MSG_EUROPE
+Original: Europe/
+--------------------------------------------------------------------------------
+Line: 729
+Key: MSG_ASIA
+Original: Asia/
+--------------------------------------------------------------------------------
+Line: 735
+Key: MSG_USE_SET_TIMEZONE
+Original: Use SET_TIMEZONE ZONE=Asia/Yekaterinburg
+--------------------------------------------------------------------------------
+Line: 802
+Key: MSG_YOU_ARE_USING_NA
+Original: You are using native screen
+--------------------------------------------------------------------------------
+Line: 804
+Key: MSG_YOU_ARE_NOT_USIN
+Original: You are NOT using native screen
+--------------------------------------------------------------------------------
+Line: 809
+Key: MSG_USING_KLIPPER_13
+Original: Using Klipper 13
+--------------------------------------------------------------------------------
+Line: 812
+Key: MSG_USING_NATIVE_KLI
+Original: Using native Klipper 11
+--------------------------------------------------------------------------------
+Line: 814
+Key: MSG_USING_NATIVE_K_1
+Original: Using native Klipper 12
+--------------------------------------------------------------------------------
+Line: 905
+Key: MSG_KAMP_STARTED_SKI
+Original: KAMP started SKIP_LEVELING={skip_leveling} FORCE_KAMP={force_kamp}
+--------------------------------------------------------------------------------
+Line: 909
+Key: MSG_DID_YOU_KNOW_YOU
+Original: Did you know you can enable KAMP globally?
+--------------------------------------------------------------------------------
+Line: 910
+Key: MSG_SAVE_ZMOD_DATA_U
+Original: SAVE_ZMOD_DATA USE_KAMP=1 CLEAR=LINE_PURGE
+--------------------------------------------------------------------------------
+Line: 917
+Key: MSG_BUILDING_MESH_ME
+Original: Building {mesh} mesh (not found). Save it AFTER print!
+--------------------------------------------------------------------------------
+Line: 922
+Key: MSG_BUILDING_DEFAULT
+Original: Building default mesh (FORCE_LEVELING={force_leveling})
+--------------------------------------------------------------------------------
+Line: 926
+Key: MSG_BUILDING_AUTO_ME
+Original: Building auto mesh (no loaded profile)
+--------------------------------------------------------------------------------
+Line: 932
+Key: MSG_NO_NEED_FOR_LEVE
+Original: No need for leveling. Loaded profile: {cur_mesh}
+--------------------------------------------------------------------------------
+Line: 936
+Key: MSG_SKIPPING_BED_LEV
+Original: Skipping bed leveling. SKIP_LEVELING={skip_leveling}
+--------------------------------------------------------------------------------
+Line: 943
+Key: MSG_PRINTING_WITH_BE
+Original: Printing with bed mesh: {cur_mesh}
+--------------------------------------------------------------------------------
+Line: 994
+Key: MSG_START_PRINT_BED
+Original: START_PRINT BED_TEMP={bed_temp} EXTRUDER_TEMP={extruder_temp} FORCE_LEVELING={force_leveling} FORCE_KAMP={force_kamp} Z_OFFSET={zoffset} SKIP_ZOFFSET={skip_zoffset} SKIP_LEVELING={skip_leveling} MESH={mesh}
+--------------------------------------------------------------------------------
+Line: 996
+Key: MSG_EXTRUDER_TEMPERA
+Original: Extruder temperature: {extruder_temp}
+--------------------------------------------------------------------------------
+Line: 997
+Key: MSG_BED_TEMPERATURE
+Original: Bed temperature: {bed_temp}
+--------------------------------------------------------------------------------
+Line: 1001
+Key: MSG_KAMP_ENABLED
+Original: KAMP: enabled
+--------------------------------------------------------------------------------
+Line: 1003
+Key: MSG_KAMP_DISABLED
+Original: KAMP: disabled
+--------------------------------------------------------------------------------
+Line: 1007
+Key: MSG_FORCED_BED_LEVEL
+Original: Forced bed leveling: enabled
+--------------------------------------------------------------------------------
+Line: 1009
+Key: MSG_FORCED_BED_LEV_1
+Original: Forced bed leveling: disabled
+--------------------------------------------------------------------------------
+Line: 1013
+Key: MSG_SKIP_BED_LEVELIN
+Original: Skip bed leveling: enabled
+--------------------------------------------------------------------------------
+Line: 1015
+Key: MSG_SKIP_BED_LEVEL_1
+Original: Skip bed leveling: disabled
+--------------------------------------------------------------------------------
+Line: 1018
+Key: MSG_LOAD_BED_MESH_ME
+Original: Load bed mesh: {mesh}
+--------------------------------------------------------------------------------
+Line: 1023
+Key: MSG_MD5_ENABLED
+Original: MD5: enabled
+--------------------------------------------------------------------------------
+Line: 1025
+Key: MSG_MD5_DISABLED
+Original: MD5: disabled
+--------------------------------------------------------------------------------
+Line: 1030
+Key: MSG_NOZZLE_PRIMING_D
+Original: Nozzle priming: disabled
+--------------------------------------------------------------------------------
+Line: 1032
+Key: MSG_NOZZLE_PRIMING_E
+Original: Nozzle priming: enabled
+--------------------------------------------------------------------------------
+Line: 1033
+Key: MSG_PRIMING_ALGORITH
+Original: Priming algorithm: {zclear}
+--------------------------------------------------------------------------------
+Line: 1037
+Key: MSG_SKEW_DISABLED
+Original: SKEW: disabled
+--------------------------------------------------------------------------------
+Line: 1039
+Key: MSG_SKEW_ENABLED
+Original: SKEW: enabled
+--------------------------------------------------------------------------------
+Line: 1044
+Key: MSG_MD5_CHECK_STARTE
+Original: MD5 check started
+--------------------------------------------------------------------------------
+Line: 1052
+Key: MSG_USING_GLOBAL_ZOF
+Original: Using global Z-Offset control. SKIP_ZOFFSET and Z_OFFSET parameters ignored
+--------------------------------------------------------------------------------
+Line: 1056
+Key: MSG_GLOBAL_ZOFFSET_L
+Original: Global Z-OFFSET load: ignored (working with screen)
+--------------------------------------------------------------------------------
+Line: 1060
+Key: MSG_ZOFFSET_SETUP_SK
+Original: Z-offset setup skipped, SKIP_ZOFFSET={skip_zoffset}
+--------------------------------------------------------------------------------
+Line: 1062
+Key: MSG_SETTING_ZOFFSET
+Original: Setting Z-offset {zoffset}, SKIP_ZOFFSET={skip_zoffset}
+--------------------------------------------------------------------------------
+Line: 1079
+Key: MSG_BUILDING_BED_MES
+Original: Building bed mesh with native screen on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+--------------------------------------------------------------------------------
+Line: 1081
+Key: MSG_BUILDING_BED_M_1
+Original: Building bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+--------------------------------------------------------------------------------
+Line: 1085
+Key: MSG_USING_KAMP_FROM
+Original: Using KAMP from global settings. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+--------------------------------------------------------------------------------
+Line: 1088
+Key: MSG_BUILDING_FULL_BE
+Original: Building full bed mesh. // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+--------------------------------------------------------------------------------
+Line: 1093
+Key: MSG_ALL_START_PRINT
+Original: All START_PRINT parameters for bed leveling are ignored
+--------------------------------------------------------------------------------
+Line: 1096
+Key: MSG_TRYING_TO_LOAD_B
+Original: Trying to load bed mesh: {mesh}
+--------------------------------------------------------------------------------
+Line: 1102
+Key: MSG_BED_MESH_MESH_LO
+Original: Bed mesh {mesh} loaded
+--------------------------------------------------------------------------------
+Line: 1112
+Key: MSG_LOADING_SKEW_PRO
+Original: Loading skew_profile
+--------------------------------------------------------------------------------
+Line: 1130
+Key: MSG_WAITING_FOR_TEMP
+Original: Waiting for temperature normalization. Bed: {bed_temp-1}-{bed_temp+1}. Extruder: {extruder_temp-1}-{extruder_temp+1}
+--------------------------------------------------------------------------------
+Line: 1131
+Key: MSG_IF_IT_TAKES_A_LO
+Original: If it takes a long time, calibrate the PID of the extruder and bed
+--------------------------------------------------------------------------------
+Line: 1142
+Key: MSG_TEMPERATURE_NORM
+Original: Temperature normalization completed
+--------------------------------------------------------------------------------
+Line: 1156
+Key: MSG_NOZZLE_LINE_PURG
+Original: Nozzle line purge disabled. DISABLE_PRIMING={disable_priming}
+--------------------------------------------------------------------------------
+Line: 1169
+Key: MSG_NOZZLE_LINE_PU_1
+Original: Nozzle line purge
+--------------------------------------------------------------------------------
+Line: 1170
+Key: MSG_ALGORITHM_ZCLEAR
+Original: Algorithm: {zclear}
+--------------------------------------------------------------------------------
+Line: 1177
+Key: MSG_YOU_ARE_USING_KA
+Original: You are using KAMP. Recommended to use LINE_PURGE: // SAVE_ZMOD_DATA CLEAR=LINE_PURGE
+--------------------------------------------------------------------------------
+Line: 1178
+Key: MSG_LINE_PURGE_FORCE
+Original: LINE_PURGE forced
+--------------------------------------------------------------------------------
+Line: 1195
+Key: MSG_WAIT_FOR_THE_MUS
+Original: Wait for the music and power off the printer. Wait 10 seconds and power on again. MCU update will begin.
+--------------------------------------------------------------------------------
+Line: 1198
+Key: MSG_FLASHING_MCU_WIT
+Original: Flashing MCU with original version for native Klipper
+--------------------------------------------------------------------------------
+Line: 1205
+Key: MSG_FLASH_MCU_KLIPPE
+Original: Flash MCU Klipper 13
+--------------------------------------------------------------------------------
+Line: 1222
+Key: MSG_NEW_SAVE_CONFIG
+Original: NEW_SAVE_CONFIG
+--------------------------------------------------------------------------------
+Line: 1232
+Key: MSG_CLOSING_DIALOG_W
+Original: Closing dialog windows on native screen (slow)
+--------------------------------------------------------------------------------
+Line: 1234
+Key: MSG_FAILED_TO_CLOSE
+Original: Failed to close windows? Use fast close: FAST_CLOSE_DIALOGS // SAVE_ZMOD_DATA CLOSE_DIALOGS=2
+--------------------------------------------------------------------------------
+Line: 1242
+Key: MSG_CLOSING_DIALOG_1
+Original: Closing dialog windows on native screen (fast)
+--------------------------------------------------------------------------------
+Line: 1247
+Key: MSG_MOTORS_DISABLED
+Original: Motors disabled
+--------------------------------------------------------------------------------
+Line: 1256
+Key: MSG_MOVING_HEAD_TO_F
+Original: Moving head to far right corner
+--------------------------------------------------------------------------------
+Line: 1321
+Key: MSG_ACTIONPROMPT_E_5
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 1337
+Key: MSG_WAITING_FOR_NOZZ
+Original: Waiting for nozzle to heat up to {extruder_temp}
+--------------------------------------------------------------------------------
+Line: 1341
+Key: MSG_EXTRUDING_10_CM
+Original: Extruding 10 cm of filament
+--------------------------------------------------------------------------------
+Line: 1350
+Key: MSG_COOLING_DOWN_TO
+Original: Cooling down to {cold_temp}°C
+--------------------------------------------------------------------------------
+Line: 1355
+Key: MSG_PULLING_THE_FILA
+Original: Pulling the filament
+--------------------------------------------------------------------------------
+Line: 1363
+Key: MSG_REMOVE_THE_REMAI
+Original: Remove the remaining filament manually
+--------------------------------------------------------------------------------
+Line: 1371
+Key: MSG_ACTIONPROMPT_23
+Original: action:prompt_begin Material selection for loading
+--------------------------------------------------------------------------------
+Line: 1372
+Key: MSG_ACTIONPROMPT_T_8
+Original: action:prompt_text Select material to clean the nozzle
+--------------------------------------------------------------------------------
+Line: 1373
+Key: MSG_ACTIONPROMPT_24
+Original: action:prompt_button_group_start
+--------------------------------------------------------------------------------
+Line: 1374
+Key: MSG_ACTIONPROMPT_25
+Original: action:prompt_button PETG|_COLDPULL_LOAD_MATERIAL TEMP=245 COLD=100|primary
+--------------------------------------------------------------------------------
+Line: 1375
+Key: MSG_ACTIONPROMPT_26
+Original: action:prompt_button ABS|_COLDPULL_LOAD_MATERIAL TEMP=255 COLD=105|primary
+--------------------------------------------------------------------------------
+Line: 1376
+Key: MSG_ACTIONPROMPT_27
+Original: action:prompt_button NEYLON|_COLDPULL_LOAD_MATERIAL TEMP=260 COLD=120|primary
+--------------------------------------------------------------------------------
+Line: 1377
+Key: MSG_ACTIONPROMPT_28
+Original: action:prompt_button_group_end
+--------------------------------------------------------------------------------
+Line: 1378
+Key: MSG_ACTIONPROMPT_F_6
+Original: action:prompt_footer_button Cancel|_COLDPULL_LOAD_MATERIAL_END
+--------------------------------------------------------------------------------
+Line: 1379
+Key: MSG_ACTIONPROMPT_S_6
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 1592
+Key: MSG_ZMOD_PARAMETERS
+Original: ZMOD parameters. Set via SAVE_ZMOD_DATA
+--------------------------------------------------------------------------------
+Line: 1599
+Key: MSG_YOU_ARE_USING_1
+Original: You are using native screen // DISPLAY_ON
+--------------------------------------------------------------------------------
+Line: 1602
+Key: MSG_YOU_ARE_WORKING
+Original: You are working WITHOUT native screen with GuppyScreen // DISPLAY_OFF GUPPY=1
+--------------------------------------------------------------------------------
+Line: 1604
+Key: MSG_YOU_ARE_WORKIN_1
+Original: You are working WITHOUT native screen // DISPLAY_OFF GUPPY=0
+--------------------------------------------------------------------------------
+Line: 1608
+Key: MSG_PARAMETERS_USED
+Original: Parameters used at print start and bed leveling [START_PRINT]
+--------------------------------------------------------------------------------
+Line: 1613
+Key: MSG_BUILD_BED_MESH_W
+Original: Build bed mesh with native screen on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+--------------------------------------------------------------------------------
+Line: 1615
+Key: MSG_BUILD_BED_MESH_O
+Original: Build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+--------------------------------------------------------------------------------
+Line: 1618
+Key: MSG_DONT_BUILD_BED_M
+Original: Don't build bed mesh on each print. // SAVE_ZMOD_DATA PRINT_LEVELING={zprint_leveling}
+--------------------------------------------------------------------------------
+Line: 1624
+Key: MSG_USE_ADAPTIVE_MES
+Original: Use adaptive mesh (KAMP) where possible instead of full bed mesh // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+--------------------------------------------------------------------------------
+Line: 1626
+Key: MSG_DONT_USE_KAMP_IN
+Original: Don't use KAMP instead of BED_MESH_CALIBRATE // SAVE_ZMOD_DATA USE_KAMP={zuse_kamp}
+--------------------------------------------------------------------------------
+Line: 1632
+Key: MSG_TEST_BED_MESH_BE
+Original: Test bed mesh before printing // SAVE_ZMOD_DATA MESH_TEST={zmesh_test}
+--------------------------------------------------------------------------------
+Line: 1634
+Key: MSG_DONT_TEST_BED_ME
+Original: Don't test bed mesh before printing // SAVE_ZMOD_DATA MESH_TEST={zmesh_test}
+--------------------------------------------------------------------------------
+Line: 1639
+Key: MSG_PLAY_MIDI_ON_PRI
+Original: Play MIDI on print start: {zmidi_start} // SAVE_ZMOD_DATA MIDI_START={zmidi_start}
+--------------------------------------------------------------------------------
+Line: 1643
+Key: MSG_PLAY_MIDI_ON_P_1
+Original: Play MIDI on print pause: {zmidi_pause} // SAVE_ZMOD_DATA MIDI_PAUSE={zmidi_pause}
+--------------------------------------------------------------------------------
+Line: 1648
+Key: MSG_CHECK_FILE_MD5_C
+Original: Check file MD5 checksum // SAVE_ZMOD_DATA FORCE_MD5={zforce_md5}
+--------------------------------------------------------------------------------
+Line: 1650
+Key: MSG_DONT_CHECK_FILE
+Original: Don't check file MD5 checksum // SAVE_ZMOD_DATA FORCE_MD5={zforce_md5}
+--------------------------------------------------------------------------------
+Line: 1656
+Key: MSG_SKEW_CORRECTION
+Original: SKEW correction disabled // SAVE_ZMOD_DATA DISABLE_SKEW={zdisable_skew}
+--------------------------------------------------------------------------------
+Line: 1658
+Key: MSG_SKEW_CORRECTIO_1
+Original: SKEW correction enabled. Profile skew_profile // SAVE_ZMOD_DATA DISABLE_SKEW={zdisable_skew}
+--------------------------------------------------------------------------------
+Line: 1664
+Key: MSG_LOAD_ZOFFSET_FRO
+Original: Load Z-OFFSET from global settings // SAVE_ZMOD_DATA LOAD_ZOFFSET={zload_zoffset}
+--------------------------------------------------------------------------------
+Line: 1666
+Key: MSG_DONT_LOAD_ZOFFSE
+Original: Don't load Z-OFFSET from global settings // SAVE_ZMOD_DATA LOAD_ZOFFSET={zload_zoffset}
+--------------------------------------------------------------------------------
+Line: 1672
+Key: MSG_DISABLE_NOZZLE_L
+Original: Disable nozzle line purge // SAVE_ZMOD_DATA DISABLE_PRIMING={zdisable_priming}
+--------------------------------------------------------------------------------
+Line: 1674
+Key: MSG_ENABLE_NOZZLE_LI
+Original: Enable nozzle line purge // SAVE_ZMOD_DATA DISABLE_PRIMING={zdisable_priming}
+--------------------------------------------------------------------------------
+Line: 1681
+Key: MSG_USE_NOZZLE_PREPU
+Original: Use nozzle pre-purge // SAVE_ZMOD_DATA PRECLEAR={zpreclear}
+--------------------------------------------------------------------------------
+Line: 1683
+Key: MSG_DONT_USE_NOZZLE
+Original: Don't use nozzle pre-purge // SAVE_ZMOD_DATA PRECLEAR={zpreclear}
+--------------------------------------------------------------------------------
+Line: 1689
+Key: MSG_PURGE_ALGORITHM
+Original: Purge algorithm: {zclear} // SAVE_ZMOD_DATA CLEAR={zclear}
+--------------------------------------------------------------------------------
+Line: 1692
+Key: MSG_PARAMETERS_USE_1
+Original: Parameters used at print end and cancellation [END_PRINT]
+--------------------------------------------------------------------------------
+Line: 1695
+Key: MSG_PLAY_MIDI_AT_PRI
+Original: Play MIDI at print end: {zmidi_end} // SAVE_ZMOD_DATA MIDI_END={zmidi_end}
+--------------------------------------------------------------------------------
+Line: 1701
+Key: MSG_DONT_CLOSE_DIALO
+Original: Don't close dialogs on native screen // SAVE_ZMOD_DATA CLOSE_DIALOGS={zclose_dialogs}
+--------------------------------------------------------------------------------
+Line: 1708
+Key: MSG_AUTO_CLOSE_DIALO
+Original: Auto close dialogs on native screen after 20 sec (slow) // SAVE_ZMOD_DATA CLOSE_DIALOGS={zclose_dialogs}
+--------------------------------------------------------------------------------
+Line: 1711
+Key: MSG_AUTO_CLOSE_DIA_1
+Original: Auto close dialogs on native screen after 20 sec (fast) // SAVE_ZMOD_DATA CLOSE_DIALOGS={zclose_dialogs}
+--------------------------------------------------------------------------------
+Line: 1716
+Key: MSG_AUTO_DISABLE_MOT
+Original: Auto disable motors after print/cancel in 25 sec // SAVE_ZMOD_DATA STOP_MOTOR={zstop_motor}
+--------------------------------------------------------------------------------
+Line: 1718
+Key: MSG_DONT_DISABLE_MOT
+Original: Don't disable motors automatically after print/cancel // SAVE_ZMOD_DATA STOP_MOTOR={zstop_motor}
+--------------------------------------------------------------------------------
+Line: 1724
+Key: MSG_DONT_REBOOT_PRIN
+Original: Don't reboot printer automatically // SAVE_ZMOD_DATA AUTO_REBOOT={zauto_reboot}
+--------------------------------------------------------------------------------
+Line: 1727
+Key: MSG_AUTO_REBOOT_PRIN
+Original: Auto reboot printer after 1.5 minutes //SAVE_ZMOD_DATA AUTO_REBOOT={zauto_reboot}
+--------------------------------------------------------------------------------
+Line: 1731
+Key: MSG_AUTO_REBOOT_PR_1
+Original: Auto reboot printer after 1.5 minutes //SAVE_ZMOD_DATA AUTO_REBOOT={zauto_reboot}
+--------------------------------------------------------------------------------
+Line: 1733
+Key: MSG_AUTO_RESTART_FIR
+Original: Auto restart firmware after 1.5 minutes //SAVE_ZMOD_DATA AUTO_REBOOT={zauto_reboot}
+--------------------------------------------------------------------------------
+Line: 1740
+Key: MSG_POWER_OFF_FF5M_P
+Original: Power off FF5M Pro after (min): {timeout} // SAVE_ZMOD_DATA PRO_POWEROFF_TIMEOUT={pro_poweroff_timeout}
+--------------------------------------------------------------------------------
+Line: 1744
+Key: MSG_SYSTEMWIDE_PARAM
+Original: System-wide parameters
+--------------------------------------------------------------------------------
+Line: 1749
+Key: MSG_SAVING_CONTROLLE
+Original: Saving controlled by native screen // SAVE_ZMOD_DATA SAVE_RESTORE={save_restore}
+--------------------------------------------------------------------------------
+Line: 1751
+Key: MSG_SAVE_DATA_FOR_PR
+Original: Save data for print recovery // SAVE_ZMOD_DATA SAVE_RESTORE={save_restore}
+--------------------------------------------------------------------------------
+Line: 1755
+Key: MSG_SAVING_CONTROL_1
+Original: Saving controlled by native screen // SAVE_ZMOD_DATA SAVE_RESTORE={save_restore}
+--------------------------------------------------------------------------------
+Line: 1757
+Key: MSG_DONT_SAVE_DATA_F
+Original: Don't save data for print recovery // SAVE_ZMOD_DATA SAVE_RESTORE={save_restore}
+--------------------------------------------------------------------------------
+Line: 1765
+Key: MSG_USING_FILAMENT_M
+Original: Using filament motion sensor // SAVE_ZMOD_DATA MOTION_SENSOR={motion_sensor}
+--------------------------------------------------------------------------------
+Line: 1767
+Key: MSG_DISABLE_FILAMENT
+Original: Disable filament sensor on native screen
+--------------------------------------------------------------------------------
+Line: 1770
+Key: MSG_USING_FILAMENT_P
+Original: Using filament presence sensor // SAVE_ZMOD_DATA MOTION_SENSOR={motion_sensor}
+--------------------------------------------------------------------------------
+Line: 1778
+Key: MSG_DONT_HIDE_COLOR
+Original: Don't hide color selection when printing starts // SAVE_ZMOD_DATA SILENT={silent}
+--------------------------------------------------------------------------------
+Line: 1781
+Key: MSG_HIDE_COLOR_SELEC
+Original: Hide color selection, print with IFS // SAVE_ZMOD_DATA SILENT={silent}
+--------------------------------------------------------------------------------
+Line: 1784
+Key: MSG_HIDE_COLOR_SEL_1
+Original: Hide color selection, print without IFS // SAVE_ZMOD_DATA SILENT={silent}
+--------------------------------------------------------------------------------
+Line: 1790
+Key: MSG_DONT_INSERT_ROD
+Original: Don't Insert rod automatically // SAVE_ZMOD_DATA AUTOINSERT={autoinsert}
+--------------------------------------------------------------------------------
+Line: 1792
+Key: MSG_INSERT_ROD_AUTOM
+Original: Insert rod automatically // SAVE_ZMOD_DATA AUTOINSERT={autoinsert}
+--------------------------------------------------------------------------------
+Line: 1798
+Key: MSG_DONT_USE_TRASH_W
+Original: Don't Use trash when printing // SAVE_ZMOD_DATA USE_TRASH_ON_PRINT={use_trash_on_print}
+--------------------------------------------------------------------------------
+Line: 1800
+Key: MSG_USE_TRASH_WHEN_P
+Original: Use trash when printing // SAVE_ZMOD_DATA USE_TRASH_ON_PRINT={use_trash_on_print}
+--------------------------------------------------------------------------------
+Line: 1809
+Key: MSG_USE_SCV_FROM_CON
+Original: Use SCV from config for shaper graphs // SAVE_ZMOD_DATA FIX_SCV={fix_scv}
+--------------------------------------------------------------------------------
+Line: 1811
+Key: MSG_USE_SCV_5_FOR_SH
+Original: Use SCV = 5 for shaper graphs // SAVE_ZMOD_DATA FIX_SCV={fix_scv}
+--------------------------------------------------------------------------------
+Line: 1817
+Key: MSG_FIX_E0011_ERROR
+Original: Fix E0011 error // SAVE_ZMOD_DATA FIX_E0011={fix_e0011}
+--------------------------------------------------------------------------------
+Line: 1819
+Key: MSG_DONT_FIX_E0011_E
+Original: Don't fix E0011 error // SAVE_ZMOD_DATA FIX_E0011={fix_e0011}
+--------------------------------------------------------------------------------
+Line: 1826
+Key: MSG_FIX_E0017_ERROR
+Original: Fix E0017 error // SAVE_ZMOD_DATA FIX_E0017={fix_e0017}
+--------------------------------------------------------------------------------
+Line: 1828
+Key: MSG_DONT_FIX_E0017_E
+Original: Don't fix E0017 error // SAVE_ZMOD_DATA FIX_E0017={fix_e0017}
+--------------------------------------------------------------------------------
+Line: 1835
+Key: MSG_ZMOD_WIFI_ON_SAV
+Original: Zmod Wifi On // SAVE_ZMOD_DATA WIFI={wifi}
+--------------------------------------------------------------------------------
+Line: 1837
+Key: MSG_ZMOD_WIFI_OFF_SA
+Original: Zmod Wifi Off // SAVE_ZMOD_DATA WIFI={wifi}
+--------------------------------------------------------------------------------
+Line: 1842
+Key: MSG_LED_BRIGHTNESS_A
+Original: LED brightness at power on: {zled} // SAVE_ZMOD_DATA LED={zled}
+--------------------------------------------------------------------------------
+Line: 1846
+Key: MSG_PLAY_MIDI_AT_POW
+Original: Play MIDI at power on: {zmidi_on} // SAVE_ZMOD_DATA MIDI_ON={zmidi_on}
+--------------------------------------------------------------------------------
+Line: 1852
+Key: MSG_USE_ALTERNATIVE
+Original: Use alternative NEW_SAVE_CONFIG // SAVE_ZMOD_DATA NEW_SAVE_CONFIG={znew_save_config}
+--------------------------------------------------------------------------------
+Line: 1854
+Key: MSG_USE_STANDARD_SAV
+Original: Use standard SAVE_CONFIG // SAVE_ZMOD_DATA NEW_SAVE_CONFIG={znew_save_config}
+--------------------------------------------------------------------------------
+Line: 1864
+Key: MSG_SWAP_NOT_USED_SA
+Original: SWAP not used // SAVE_ZMOD_DATA USE_SWAP={zuse_swap}
+--------------------------------------------------------------------------------
+Line: 1867
+Key: MSG_SWAP_USED_ON_EMM
+Original: SWAP used on EMMC // SAVE_ZMOD_DATA USE_SWAP={zuse_swap}
+--------------------------------------------------------------------------------
+Line: 1870
+Key: MSG_SWAP_USED_ON_USB
+Original: SWAP used on USB FLASH // SAVE_ZMOD_DATA USE_SWAP={zuse_swap}
+--------------------------------------------------------------------------------
+Line: 1877
+Key: MSG_ALLOW_CHINESE_CL
+Original: Allow Chinese clouds // SAVE_ZMOD_DATA CHINA_CLOUD={zchina_cloud}
+--------------------------------------------------------------------------------
+Line: 1879
+Key: MSG_BLOCK_CHINESE_CL
+Original: Block Chinese clouds // SAVE_ZMOD_DATA CHINA_CLOUD={zchina_cloud}
+--------------------------------------------------------------------------------
+Line: 1885
+Key: MSG_SAVE_FLUIDDMAINS
+Original: Save Fluidd/Mainsail button changes // SAVE_ZMOD_DATA SAVE_MOONRAKER={save_moonraker}
+--------------------------------------------------------------------------------
+Line: 1887
+Key: MSG_USE_FLUIDDMAINSA
+Original: Use Fluidd/Mainsail button settings from ZMOD // SAVE_ZMOD_DATA SAVE_MOONRAKER={save_moonraker}
+--------------------------------------------------------------------------------
+Line: 1893
+Key: MSG_TURN_OFF_NATIVE
+Original: Turn off native screen after (sec): {display_off_timeout} // SAVE_ZMOD_DATA DISPLAY_OFF_TIMEOUT={display_off_timeout}
+--------------------------------------------------------------------------------
+Line: 1903
+Key: MSG_USING_KLIPPER_1
+Original: Using Klipper 13
+--------------------------------------------------------------------------------
+Line: 1906
+Key: MSG_USING_NATIVE_K_2
+Original: Using native Klipper 11
+--------------------------------------------------------------------------------
+Line: 1908
+Key: MSG_USING_NATIVE_K_3
+Original: Using native Klipper 12
+--------------------------------------------------------------------------------
+Line: 1920
+Key: MSG_KLIPPER_PROCESS
+Original: Klipper process priority (1-min, 40-max): {znice}
+--------------------------------------------------------------------------------
+Line: 1926
+Key: MSG_AVAILABLE_LANGUA
+Original: Available languages: en, ru, de, fr, it, es, ja, ko, zh, pt // LANG LANG={lang}
+--------------------------------------------------------------------------------
+Line: 2101
+Key: MSG_G1_X_MOVE_Y_MOVE
+Original: G1 { x_move } { y_move } { z_move } { e_move } { rate }
+--------------------------------------------------------------------------------
+Line: 2104
+Key: MSG_PRINTING_IN_PROG
+Original: Printing in progress. Movement is disabled.
+--------------------------------------------------------------------------------
+Line: 2127
+Key: MSG_STARTED_MD5_CH_1
+Original: Started MD5 check {filename}
+--------------------------------------------------------------------------------
+Line: 2153
+Key: MSG_GETTING_DATA_F_2
+Original: Getting data for KAMP.
+--------------------------------------------------------------------------------
+Line: 2170
+Key: MSG_REQUIRES_256MB_R
+Original: Requires 256MB RAM + enabled SWAP. !!
+--------------------------------------------------------------------------------
+Line: 2195
+Key: MSG_GENERATING_BELTS
+Original: Generating belts frequency profile...
+--------------------------------------------------------------------------------
+Line: 2196
+Key: MSG_THIS_WILL_TAKE_S
+Original: This will take some time (3-5 minutes)
+--------------------------------------------------------------------------------
+Line: 2211
+Key: MSG_IMAGE_SAVED_PNG
+Original: Image saved: {png_out_path}. Configuration -> mod_data
+--------------------------------------------------------------------------------
+Line: 2212
+Key: MSG_COMMAND_GUPPY_BE
+Original: Command {guppy_belts_calibration} finished
+--------------------------------------------------------------------------------
+Line: 2243
+Key: MSG_ACTIONPROMPT_29
+Original: action:prompt_begin This is a test macro
+--------------------------------------------------------------------------------
+Line: 2244
+Key: MSG_ACTIONPROMPT_T_9
+Original: action:prompt_text Add _GUPPY_MACRO to mod_data/user.cfg
+--------------------------------------------------------------------------------
+Line: 2245
+Key: MSG_ACTIONPROMPT_30
+Original: action:prompt_text Example of _GUPPY_MACRO is in mod/base.cfg
+--------------------------------------------------------------------------------
+Line: 2247
+Key: MSG_ACTIONPROMPT_F_7
+Original: action:prompt_footer_button Ok|RESPOND TYPE=command MSG=action:prompt_end|info
+--------------------------------------------------------------------------------
+Line: 2248
+Key: MSG_ACTIONPROMPT_S_7
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 2259
+Key: MSG_COLLECTING_X_AXI
+Original: Collecting X axis data
+--------------------------------------------------------------------------------
+Line: 2264
+Key: MSG_COLLECTING_Y_AXI
+Original: Collecting Y axis data
+--------------------------------------------------------------------------------
+Line: 2281
+Key: MSG_SPEED0_ZSPEED4
+Original: Speed0: {zspeed/4}
+--------------------------------------------------------------------------------
+Line: 2293
+Key: MSG_SPEED1_SPEED
+Original: Speed1: {speed}
+--------------------------------------------------------------------------------
+Line: 2300
+Key: MSG_SPEED2_SPEED
+Original: Speed2: {speed}
+--------------------------------------------------------------------------------
+Line: 2313
+Key: MSG_SAVED_DATA_DELET
+Original: Saved data deleted
+--------------------------------------------------------------------------------
+Line: 2320
+Key: MSG_CURRENTLY_PRINTI
+Original: Currently printing: {filename} ({progress | round(1)}%), print recovery impossible
+--------------------------------------------------------------------------------
+Line: 2322
+Key: MSG_PAUSED_FILENAME
+Original: Paused: {filename}, print recovery impossible
+--------------------------------------------------------------------------------
+Line: 2324
+Key: MSG_PRINT_COMPLETED
+Original: Print completed
+--------------------------------------------------------------------------------
+Line: 2327
+Key: MSG_ERROR_PRINTERPRI
+Original: Error: {printer.print_stats.message}
+--------------------------------------------------------------------------------
+Line: 2330
+Key: MSG_STATUS_STATE
+Original: Status: {state}
+--------------------------------------------------------------------------------
+Line: 2343
+Key: MSG_ACTIONPROMPT_31
+Original: action:prompt_begin Interrupted print detected
+--------------------------------------------------------------------------------
+Line: 2344
+Key: MSG_ACTIONPROMPT_32
+Original: action:prompt_text Switch to console to view recovery stages
+--------------------------------------------------------------------------------
+Line: 2345
+Key: MSG_ACTIONPROMPT_33
+Original: action:prompt_button_group_start
+--------------------------------------------------------------------------------
+Line: 2346
+Key: MSG_ACTIONPROMPT_34
+Original: action:prompt_button Restore|_ZRESTORE_OK|primary
+--------------------------------------------------------------------------------
+Line: 2347
+Key: MSG_ACTIONPROMPT_35
+Original: action:prompt_button Delete data|_ZRESTORE_DEL|primary
+--------------------------------------------------------------------------------
+Line: 2348
+Key: MSG_ACTIONPROMPT_36
+Original: action:prompt_button_group_end
+--------------------------------------------------------------------------------
+Line: 2349
+Key: MSG_ACTIONPROMPT_F_8
+Original: action:prompt_footer_button Cancel|_ZRESTORE_CANCEL
+--------------------------------------------------------------------------------
+Line: 2350
+Key: MSG_ACTIONPROMPT_S_8
+Original: action:prompt_show
+--------------------------------------------------------------------------------
+Line: 2354
+Key: MSG_ACTIONPROMPT_E_6
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 2359
+Key: MSG_ACTIONPROMPT_E_7
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 2364
+Key: MSG_ACTIONPROMPT_E_8
+Original: action:prompt_end
+--------------------------------------------------------------------------------
+Line: 2374
+Key: MSG_BED_MESH_MESH_NO
+Original: Bed mesh {mesh} not found. Loaded MESH_DATA profile
+--------------------------------------------------------------------------------
+Line: 2377
+Key: MSG_BED_MESH_MESH_1
+Original: Bed mesh {mesh} not found. Loaded auto profile
+--------------------------------------------------------------------------------
+Line: 2391
+Key: MSG_BED_MESH_MESH_2
+Original: Bed mesh {mesh} loaded
+--------------------------------------------------------------------------------

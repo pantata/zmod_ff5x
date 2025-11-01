@@ -16,7 +16,7 @@ BYTESIZE = 8
 TIMEOUT = 0.2
 HOST_REPORT_TIME = 0.2
 RETRY_COUNT = 3
-FFCONFIG='/usr/data/config/Adventurer5M.json'
+FFCONFIG='/usr/prog/config/Adventurer5M.json'
 TYPECONFIG='/usr/data/config/mod_data/filament.json'
 FILE_CONFIG='/usr/data/config/mod_data/file.json'
 
@@ -418,7 +418,7 @@ class zmod_ifs:
 
         channel = gcmd.get_int('CHANNEL', cur_prutok)
         if channel != cur_prutok:
-            self.gcode.run_script_from_command(f"_A_CHANGE_FILAMENT CHANNEL={channel} RESTORE=0")
+            self.gcode.run_script_from_command(f"_A_CHANGE_FILAMENT CHANNEL={channel} RESTORE_POSITION=0 RESTORE_TEMP=0")
         else:
             self.print_str(f"Указываю активный пруток T{cur_prutok}" if self.lang == 'ru' else f"Setting active filament T{cur_prutok}")
             self.gcode.run_script_from_command(f"SDCARD_SET_CHANNEL CHANNEL={cur_prutok}")
@@ -470,7 +470,7 @@ class zmod_ifs:
                 with open(FILE_CONFIG, 'w') as f:
                     json.dump(new_mapping, f)
 
-                self.gcode.run_script_from_command(f"_A_CHANGE_FILAMENT CHANNEL={t_prutok} RESTORE=1")
+                self.gcode.run_script_from_command(f"_A_CHANGE_FILAMENT CHANNEL={t_prutok} RESTORE_POSITION=0 RESTORE_TEMP=1")
                 self.gcode.run_script_from_command("RESUME")
                 return
 

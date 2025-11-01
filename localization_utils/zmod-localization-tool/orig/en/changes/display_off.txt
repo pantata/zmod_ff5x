@@ -1,0 +1,23 @@
+Total changes: 5
+================================================================================
+
+Line: 54
+Key: MSG_NATIVE_SCREEN_DI
+Original: Native screen disabled
+--------------------------------------------------------------------------------
+Line: 144
+Key: MSG_AUTOMATIC_REBOOT
+Original: Automatic reboot in 1.5 minutes
+--------------------------------------------------------------------------------
+Line: 150
+Key: MSG_AUTOMATIC_PRINTE
+Original: Automatic printer shutdown in {pro_poweroff_timeout} min
+--------------------------------------------------------------------------------
+Line: 185
+Key: MSG_GUPPYSCREEN_IS_N
+Original: GuppyScreen is not used
+--------------------------------------------------------------------------------
+Line: 188
+Key: MSG_YOURE_USING_NATI
+Original: You're using native screen. No need to restart GuppyScreen
+--------------------------------------------------------------------------------

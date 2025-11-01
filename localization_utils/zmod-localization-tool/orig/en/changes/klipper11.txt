@@ -1,0 +1,39 @@
+Total changes: 9
+================================================================================
+
+Line: 28
+Key: MSG_REPLACE_SPIRALAU
+Original: Replace Spiral/Auto Z-Hop. Printer doesn't support it.
+--------------------------------------------------------------------------------
+Line: 29
+Key: MSG_IN_ORCA_PRINTER
+Original: In Orca. Printer profile -> Extruder 1 -> Z Hop Type. Set Normal or Sloped.
+--------------------------------------------------------------------------------
+Line: 49
+Key: MSG_RESETTING_LOAD_C
+Original: Resetting load cell weight
+--------------------------------------------------------------------------------
+Line: 87
+Key: MSG_LOAD_CELL_TRIGGE
+Original: Load cell triggered! Make sure the bed is clean!
+--------------------------------------------------------------------------------
+Line: 91
+Key: MSG_PROBE_SENSOR_PRO
+Original: Probe sensor {probe}
+--------------------------------------------------------------------------------
+Line: 135
+Key: MSG_CHECK_ITER1_CLP
+Original: Check {iter+1}. {clp}. Weight: {we}
+--------------------------------------------------------------------------------
+Line: 153
+Key: MSG_LOAD_CELL_RESET
+Original: Load cell reset successful. Weight: {we}
+--------------------------------------------------------------------------------
+Line: 156
+Key: MSG_WEIGHT_AT_ERROR
+Original: Weight at error: {we}
+--------------------------------------------------------------------------------
+Line: 158
+Key: MSG_USE_BED_LEVELING
+Original: Use bed leveling mode from native screen. // SAVE_ZMOD_DATA PRINT_LEVELING=1
+--------------------------------------------------------------------------------

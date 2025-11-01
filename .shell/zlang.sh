@@ -16,15 +16,14 @@ else if [ "$1" == 'cs' ]; then ZLANG="cs"
 else ZLANG="en"
 fi; fi; fi; fi; fi; fi; fi; fi; fi; fi; fi
 
-# Path to the symlink that Klipper includes (e.g., .../config/lang/language.cfg)
-SYM_LINK_PATH="${MOD_CONF}/mod/lang/language.yml"
-# Path to the target configuration file (e.g., .../config/lang/en.cfg)
-TARGET_CONFIG_PATH="${MOD_CONF}/mod/lang/${ZLANG}.yml"
+# Path to the symlink zmod_locale.yml
+SYM_LINK_PATH="${MOD_CONF}/mod/zmod_locale.yml"
+TARGET_CONFIG_PATH="${MOD_CONF}/mod/locale/{ZLANG}.yml"
 # Check if the file exists. If the file does not exist, set the language back to 'en'.
 if [ ! -f "$TARGET_CONFIG_PATH" ]; then
     echo "Warning: Configuration file for language ${ZLANG} not found (${TARGET_CONFIG_PATH}). Using default 'en'." >&2
     ZLANG="en"
-    TARGET_CONFIG_PATH="${MOD_CONF}/lang/${ZLANG}.yml"
+    TARGET_CONFIG_PATH="${MOD_CONF}/mod/locale/en.yml"
 fi
 
 # 2. Removing the old symlink, if it exists
