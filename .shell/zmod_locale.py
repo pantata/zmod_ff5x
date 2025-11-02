@@ -84,7 +84,6 @@ class Localization:
         self.messages_file = os.path.join(self.config_dir, MESSAGES_FILENAME)
 
         self.logger.info("Config path: %s", self.messages_file)
-        self.logger.info("Fixed config path: %s", FULL_CONFIG_PATH)
         self.logger.info("ZLocale module ready. Attempting to load messages from: %s", self.messages_file)
 
         # Register the object immediately during initialization
@@ -135,8 +134,7 @@ class Localization:
 
     def _load_messages(self):
         """Loads messages from  file zmod_locale.yml."""
-        if not os.path.exists(self.messages_file):
-            self.logger.error("ZLocale file not found: %s. Please check FULL_CONFIG_PATH constant.", self.messages_file)
+        if not os.path.exists(self.messages_file):            
             self.logger.error("!!! FATAL ERROR !!! Module will not function without zlocale.yml.")
             return
 
