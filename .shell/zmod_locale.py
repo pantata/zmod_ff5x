@@ -42,34 +42,19 @@ class Localization:
         
         self.messages = {}
         
-        # Get language from [zmod] section, default to 'en'
-        self.language = self._get_language_from_config(config)
-        
-        # Construct the path using CONFIG_PATH and language
-        self.messages_file = os.path.join(CONFIG_PATH, f"{self.language}.yml")
-
         # Register the object immediately during initialization
         self.printer.add_object('zlocale', self)
         self.printer.register_event_handler("klippy:ready", self._handle_ready)
 
-    def _get_language_from_config(self, config):
-        """Get language setting from [zmod] section."""
-        try:
-            # Get the main config object
-            pconfig = config.get_printer().lookup_object('configfile')
-            # Try to read from the raw config data
-            if hasattr(pconfig, 'config'):
-                raw_config = pconfig.config
-                if hasattr(raw_config, 'getsection'):
-                    zmod_section = raw_config.getsection('zmod')
-                    if zmod_section and hasattr(zmod_section, 'get'):
-                        language = zmod_section.get('language', 'en')
-                        return language.strip().lower()
-        except Exception as e:
-            self.logger.warning("Could not read language from [zmod] section: %s", e)
+    def _get_language_from_zmod(self):
+        """Get language setting from zmod object."""
+        self.zmod = self.printer.lookup_object('zmod', None)
+        self.language = 'en'
+        if self.zmod is not None:
+            self.language = self.zmod.get_lang()
         
-        # Default fallback
-        return 'en'
+        # Construct the path using CONFIG_PATH and language
+        self.messages_file = os.path.join(CONFIG_PATH, f"{self.language}.yml")
 
     def _inject_into_jinja(self):
         injected = False
@@ -110,6 +95,7 @@ class Localization:
             self.logger.warning("No Jinja2 environment found; use printer['zlocale'](...) in macros.")
     
     def _handle_ready(self):
+        self._get_language_from_zmod()
         self._load_messages()
         self._inject_into_jinja()
 
