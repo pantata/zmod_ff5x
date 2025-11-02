@@ -85,9 +85,9 @@ class Localization:
         # Construct the path using CONFIG_PATH and language
         self.messages_file = os.path.join(CONFIG_PATH, f"{language}.yml")
 
-        self.logger.info("Language: %s", language)
-        self.logger.info("Config path: %s", self.messages_file)
-        self.logger.info("ZLocale module ready. Attempting to load messages from: %s", self.messages_file)
+        logging.exception("Language: %s", language)
+        logging.exception("Config path: %s", self.messages_file)
+        logging.exception("ZLocale module ready. Attempting to load messages from: %s", self.messages_file)
 
         # Register the object immediately during initialization
         self.printer.add_object('zlocale', self)
