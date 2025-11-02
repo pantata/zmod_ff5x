@@ -1,8 +1,9 @@
 # (2025) ludek.slouf@gmail.com
 # Zmod Locale module for Klipper
-# Loads localized messages from zmod_locale.yml and provides access via printer['zlocale'](...)
-# Requires zmod_locale.yml to be present in the Klipper config directory.
-# zmod_locale.yml structure:
+# Loads localized messages from language-specific yml files and provides access via printer['zlocale'](...)
+# Requires language files (e.g., en.yml, cs.yml) to be present in CONFIG_PATH.
+# Language is determined by ZLANG environment variable.
+# Language file structure:
 #
 # messages:
 #   MSG_HELLO: "Hello from ZMOD!"
@@ -17,7 +18,7 @@ import yaml
 import os
 
 # IMPORTANT: The file must exist.
-MESSAGES_FILENAME = '/usr/data/config/zmod_locale.yml'
+CONFIG_PATH = '/usr/data/config/mod/locale/'
 
 def _setup_logger():
     return logging.getLogger()
@@ -78,9 +79,13 @@ class Localization:
         
         self.messages = {}
         
-        # Use the full path defined in MESSAGES_FILENAME
-        self.messages_file = MESSAGES_FILENAME
+        # Get language from ZLANG environment variable, default to 'en'
+        language = os.getenv('ZLANG', 'en')
+        
+        # Construct the path using CONFIG_PATH and language
+        self.messages_file = os.path.join(CONFIG_PATH, f"{language}.yml")
 
+        self.logger.info("Language: %s", language)
         self.logger.info("Config path: %s", self.messages_file)
         self.logger.info("ZLocale module ready. Attempting to load messages from: %s", self.messages_file)
 

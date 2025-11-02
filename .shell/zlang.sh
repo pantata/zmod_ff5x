@@ -16,24 +16,6 @@ else if [ "$1" == 'cs' ]; then ZLANG="cs"
 else ZLANG="en"
 fi; fi; fi; fi; fi; fi; fi; fi; fi; fi; fi
 
-# Path to the symlink zmod_locale.yml
-SYM_LINK_PATH="${MOD_CONF}/mod/zmod_locale.yml"
-TARGET_CONFIG_PATH="${MOD_CONF}/mod/locale/{ZLANG}.yml"
-# Check if the file exists. If the file does not exist, set the language back to 'en'.
-if [ ! -f "$TARGET_CONFIG_PATH" ]; then
-    echo "Warning: Configuration file for language ${ZLANG} not found (${TARGET_CONFIG_PATH}). Using default 'en'." >&2
-    ZLANG="en"
-    TARGET_CONFIG_PATH="${MOD_CONF}/mod/locale/en.yml"
-fi
-
-# 2. Removing the old symlink, if it exists
-rm -f $SYM_LINK_PATH &>/dev/null
-
-# 3. Creating a new symlink
-# Correct format: ln -s [TARGET] [LINK]
-# The link (SYM_LINK_PATH) will point to the TARGET (TARGET_CONFIG_PATH)
-ln -s $TARGET_CONFIG_PATH $SYM_LINK_PATH &>/dev/null
-
 echo "[zmod]
 language: ${ZLANG}" >${MOD_CONF}/mod_data/lang.cfg
 echo "Use lang: ${ZLANG}"
