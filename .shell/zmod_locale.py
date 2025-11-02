@@ -17,7 +17,7 @@ import yaml
 import os
 
 # IMPORTANT: The file must exist.
-MESSAGES_FILENAME = 'zmod_locale.yml'
+MESSAGES_FILENAME = '/usr/data/config/zmod_locale.yml'
 
 def _setup_logger():
     return logging.getLogger('klipper.zmod_locale')
@@ -78,9 +78,8 @@ class Localization:
         
         self.messages = {}
         
-        # The path is detected automatically (env -> configfile -> fallback)
-        self.config_dir = _detect_config_dir(self.printer)
-        self.messages_file = os.path.join(self.config_dir, MESSAGES_FILENAME)
+        # Use the full path defined in MESSAGES_FILENAME
+        self.messages_file = MESSAGES_FILENAME
 
         self.logger.info("Config path: %s", self.messages_file)
         self.logger.info("ZLocale module ready. Attempting to load messages from: %s", self.messages_file)
