@@ -197,7 +197,7 @@ class Localization:
             return f"ZLOCALE ERROR: Formatting failed for key '{key}': {e}"
 
     def __call__(self, key, **kwargs):
-        """Allows calling directly from locale('KLIC', var=...)."""
+        """Allows calling directly from zlocale('KEY', var=...)."""
         return self.get_msg(key, **kwargs)
 
 def load_config(config):
