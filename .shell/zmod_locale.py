@@ -1,4 +1,3 @@
-
 # (2025) ludek.slouf@gmail.com
 # Zmod Locale module for Klipper
 # Loads localized messages from zmod_locale.yml and provides access via printer['zlocale'](...)
@@ -167,7 +166,7 @@ class Localization:
         template = self.messages.get(key)
         
         if template is None:
-            return f"ZLOCALE ERROR: Key '{key}' not found."
+            return f"ZLOCALE ERROR: Key '{key}' not found in {self.messages_file}."
 
         try:
             return template.format(**kwargs)
