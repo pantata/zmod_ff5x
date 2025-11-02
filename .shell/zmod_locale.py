@@ -183,7 +183,7 @@ class Localization:
             self.logger.error("Error loading ZLocale messages from %s: %s", self.messages_file, e)
             self.messages = {}
     def get_msg(self, key, **kwargs):
-        """Vrátí naformátovaný text pro daný klíč."""
+        """Returns the formatted text for the given key."""
         template = self.messages.get(key)
         
         if template is None:
