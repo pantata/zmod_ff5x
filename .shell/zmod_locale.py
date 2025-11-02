@@ -20,7 +20,7 @@ import os
 MESSAGES_FILENAME = '/usr/data/config/zmod_locale.yml'
 
 def _setup_logger():
-    return logging.getLogger('klipper.zmod_locale')
+    return logging.getLogger()
 
 def _detect_config_dir(printer):
     # 1) explicit override via env variable
