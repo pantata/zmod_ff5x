@@ -2,7 +2,7 @@
 # Zmod Locale module for Klipper
 # Loads localized messages from language-specific yml files and provides access via printer['zlocale'](...)
 # Requires language files (e.g., en.yml, cs.yml) to be present in CONFIG_PATH.
-# Language is determined by ZLANG environment variable.
+# Language is determined by [zmod] language config key.
 # Language file structure:
 #
 # messages:
@@ -79,8 +79,8 @@ class Localization:
         
         self.messages = {}
         
-        # Get language from ZLANG environment variable, default to 'en'
-        language = os.getenv('ZLANG', 'en')
+        # Get language from [zmod] section, default to 'en'
+        language = self._get_language_from_config()
         
         # Construct the path using CONFIG_PATH and language
         self.messages_file = os.path.join(CONFIG_PATH, f"{language}.yml")
@@ -92,6 +92,23 @@ class Localization:
         # Register the object immediately during initialization
         self.printer.add_object('zlocale', self)
         self.printer.register_event_handler("klippy:ready", self._handle_ready)
+
+    def _get_language_from_config(self):
+        """Get language setting from [zmod] section."""
+        try:
+            # Try to get the configfile object
+            cfg = self.printer.lookup_object('configfile', None)
+            if cfg:
+                # Try to get the [zmod] section
+                zmod_config = cfg.get_config().getsection('zmod')
+                if zmod_config:
+                    language = zmod_config.get('language', 'en')
+                    return language.strip().lower()
+        except Exception as e:
+            self.logger.warning("Could not read language from [zmod] section: %s", e)
+        
+        # Default fallback
+        return 'en'
 
     def _inject_into_jinja(self):
         injected = False
@@ -136,9 +153,9 @@ class Localization:
         self._inject_into_jinja()
 
     def _load_messages(self):
-        """Loads messages from  file zmod_locale.yml."""
+        """Loads messages from language-specific yml file."""
         if not os.path.exists(self.messages_file):            
-            self.logger.error("!!! FATAL ERROR !!! Module will not function without zlocale.yml.")
+            self.logger.error("!!! FATAL ERROR !!! Module will not function without language file: %s", self.messages_file)
             return
 
         try:
