@@ -308,7 +308,7 @@
   "MSG_USING_NATIVE_K_2": "Using native Klipper 11"
   "MSG_USING_NATIVE_K_3": "Using native Klipper 12"
   "MSG_KLIPPER_PROCESS": "Klipper process priority (1-min, 40-max): {znice}"
-  "MSG_AVAILABLE_LANGUA": "Available languages: en, ru, de, fr, it, es, ja, ko, zh, pt // LANG LANG={lang}"
+  "MSG_AVAILABLE_LANGUA": "Available languages: en, ru, de, fr, it, es, ja, ko, zh, pt, cs // LANG LANG={lang}"
   "MSG_G1_X_MOVE_Y_MOVE": "G1 { x_move } { y_move } { z_move } { e_move } { rate }"
   "MSG_PRINTING_IN_PROG": "Printing in progress. Movement is disabled."
   "MSG_STARTED_MD5_CH_1": "Started MD5 check {filename}"

@@ -80,14 +80,10 @@ class Localization:
         self.messages = {}
         
         # Get language from [zmod] section, default to 'en'
-        language = self._get_language_from_config()
+        self.language = self._get_language_from_config()
         
         # Construct the path using CONFIG_PATH and language
-        self.messages_file = os.path.join(CONFIG_PATH, f"{language}.yml")
-
-        logging.exception("Language: %s", language)
-        logging.exception("Config path: %s", self.messages_file)
-        logging.exception("ZLocale module ready. Attempting to load messages from: %s", self.messages_file)
+        self.messages_file = os.path.join(CONFIG_PATH, f"{self.language}.yml")
 
         # Register the object immediately during initialization
         self.printer.add_object('zlocale', self)
@@ -177,6 +173,10 @@ class Localization:
             else:
                 self.logger.error("The root of YAML must be a map (dict), but it is %s", type(data).__name__)
                 self.messages = {}
+            
+            self.logger.info("Language: %s", self.language)
+            self.logger.info("Config path: %s", self.messages_file)
+            self.logger.info("ZLocale module ready. Attempting to load messages from: %s", self.messages_file)
 
             self.logger.info("ZLocale messages loaded successfully. Total keys: %d", len(self.messages))
         except Exception as e:
