@@ -23,43 +23,6 @@ CONFIG_PATH = '/usr/data/config/mod/locale/'
 def _setup_logger():
     return logging.getLogger()
 
-def _detect_config_dir(printer):
-    # 1) explicit override via env variable
-    env_dir = os.getenv("ZMOD_CONFIG_DIR")
-    if env_dir and os.path.isdir(env_dir):
-        return env_dir
-
-    # 2) find out from the Klipper 'configfile' object
-    try:
-        cfg = printer.lookup_object('configfile', None)
-        if cfg:
-            # try methods that return the path to the main file
-            for meth in ('get_filename', 'get_main_config', 'get_config_file', 'get_base_path'):
-                fn = getattr(cfg, meth, None)
-                if callable(fn):
-                    try:
-                        path = fn()
-                        if isinstance(path, str) and path:
-                            if os.path.isfile(path):
-                                return os.path.dirname(path)
-                            if os.path.isdir(path):
-                                return path
-                    except Exception:
-                        pass
-            # try directly known attributes
-            for attr in ('filename', 'main_config_path', 'config_path', 'config_dir', 'basedir', 'base_path'):
-                path = getattr(cfg, attr, None)
-                if isinstance(path, str) and path:
-                    if os.path.isfile(path):
-                        return os.path.dirname(path)
-                    if os.path.isdir(path):
-                        return path
-    except Exception:
-        pass
-
-    # 3) rozumný výchozí stav pro tento image
-    return os.path.join(os.path.expanduser("~"), "printer_data", "config")
-
 class Localization:
     def __init__(self, config):
         #read debug option from [zmod_locale] section (defaults to False)
