@@ -80,7 +80,7 @@ class Localization:
         self.messages = {}
         
         # Get language from [zmod] section, default to 'en'
-        self.language = self._get_language_from_config()
+        self.language = self._get_language_from_config(config)
         
         # Construct the path using CONFIG_PATH and language
         self.messages_file = os.path.join(CONFIG_PATH, f"{self.language}.yml")
@@ -89,17 +89,19 @@ class Localization:
         self.printer.add_object('zlocale', self)
         self.printer.register_event_handler("klippy:ready", self._handle_ready)
 
-    def _get_language_from_config(self):
+    def _get_language_from_config(self, config):
         """Get language setting from [zmod] section."""
         try:
-            # Try to get the configfile object
-            cfg = self.printer.lookup_object('configfile', None)
-            if cfg:
-                # Try to get the [zmod] section
-                zmod_config = cfg.get_config().getsection('zmod')
-                if zmod_config:
-                    language = zmod_config.get('language', 'en')
-                    return language.strip().lower()
+            # Get the main config object
+            pconfig = config.get_printer().lookup_object('configfile')
+            # Try to read from the raw config data
+            if hasattr(pconfig, 'config'):
+                raw_config = pconfig.config
+                if hasattr(raw_config, 'getsection'):
+                    zmod_section = raw_config.getsection('zmod')
+                    if zmod_section and hasattr(zmod_section, 'get'):
+                        language = zmod_section.get('language', 'en')
+                        return language.strip().lower()
         except Exception as e:
             self.logger.warning("Could not read language from [zmod] section: %s", e)
         
