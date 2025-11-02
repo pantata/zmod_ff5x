@@ -1,0 +1,39 @@
+Total changes: 9
+================================================================================
+
+Line: 83
+Key: MSG_DOWNLOAD_ARCHI_1
+Original: Download archive in 'Configuration' -> 'mod_data' -> config.tar
+--------------------------------------------------------------------------------
+Line: 84
+Key: MSG_TO_RESTORE_THE_1
+Original: To restore the config, copy to 'Configuration' -> 'mod_data' -> config.tar and call RESTORE_TAR_CONFIG
+--------------------------------------------------------------------------------
+Line: 162
+Key: MSG_ZPROBEZPROBE_1
+Original: Z-probe={zprobe}
+--------------------------------------------------------------------------------
+Line: 168
+Key: MSG_START_OF_CLEAN_1
+Original: Start of cleaning Z={zprobe+0.15}
+--------------------------------------------------------------------------------
+Line: 177
+Key: MSG_END_OF_CLEANIN_1
+Original: End of cleaning Z={zprobe+0.05}
+--------------------------------------------------------------------------------
+Line: 199
+Key: MSG_NOZZLE_PRECLEA_3
+Original: Nozzle pre-cleaning
+--------------------------------------------------------------------------------
+Line: 223
+Key: MSG_PRECLEANING_COMP
+Original: Pre-cleaning completed
+--------------------------------------------------------------------------------
+Line: 232
+Key: MSG_NOZZLE_PRECLEA_4
+Original: Nozzle pre-cleaning {extruder_temp}/{bed_temp}
+--------------------------------------------------------------------------------
+Line: 250
+Key: MSG_RUNNING_NATIVE_1
+Original: Running native nozzle cleaning {extruder_temp}/{bed_temp}
+--------------------------------------------------------------------------------

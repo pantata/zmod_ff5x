@@ -1,0 +1,95 @@
+Total changes: 23
+================================================================================
+
+Line: 14
+Key: MSG_FILAMENT_JAM_DET
+Original: Filament jam detected (IFS).
+--------------------------------------------------------------------------------
+Line: 15
+Key: MSG_FILAMENT_JAM_D_1
+Original: Filament jam detected (IFS).
+--------------------------------------------------------------------------------
+Line: 17
+Key: MSG_FILAMENT_RUNOU_2
+Original: Filament runout detected (IFS). Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.
+--------------------------------------------------------------------------------
+Line: 18
+Key: MSG_FILAMENT_RUNOU_3
+Original: Filament runout detected (IFS). Use RESUME_MOTION_SENSOR to resume printing after the filament in the extruder runs out.
+--------------------------------------------------------------------------------
+Line: 19
+Key: MSG_AUTO_RUN_RESUME
+Original: Auto run RESUME_MOTION_SENSOR
+--------------------------------------------------------------------------------
+Line: 20
+Key: MSG_AUTO_RUN_RESUM_1
+Original: Auto run RESUME_MOTION_SENSOR
+--------------------------------------------------------------------------------
+Line: 32
+Key: MSG_FILAMENT_RUNOU_4
+Original: Filament runout detected (Head)
+--------------------------------------------------------------------------------
+Line: 33
+Key: MSG_FILAMENT_RUNOU_5
+Original: Filament runout detected (Head)
+--------------------------------------------------------------------------------
+Line: 62
+Key: MSG_TCHANNEL
+Original: T{channel}
+--------------------------------------------------------------------------------
+Line: 77
+Key: MSG_TEMP_TLAST_DATAT
+Original: Temp: T{last_data.temp}
+--------------------------------------------------------------------------------
+Line: 80
+Key: MSG_FAN_LAST_DATAFAN
+Original: Fan: {last_data.fan_speed*100}
+--------------------------------------------------------------------------------
+Line: 96
+Key: MSG_RESTORE_POSITION
+Original: Restore position change_filament
+--------------------------------------------------------------------------------
+Line: 108
+Key: MSG_IFS_OFF
+Original: IFS Off
+--------------------------------------------------------------------------------
+Line: 114
+Key: MSG_IFS_ON
+Original: IFS On
+--------------------------------------------------------------------------------
+Line: 139
+Key: MSG__RESUME_MACRO
+Original: _RESUME_MACRO
+--------------------------------------------------------------------------------
+Line: 211
+Key: MSG_DROP_FILAMENT_FI
+Original: Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed}
+--------------------------------------------------------------------------------
+Line: 266
+Key: MSG_LOADING_FILAMENT
+Original: Loading filament {prutok} {filament_type}
+--------------------------------------------------------------------------------
+Line: 275
+Key: MSG_HEATING_THE_NOZZ
+Original: Heating the nozzle to {extruder_temp} degrees
+--------------------------------------------------------------------------------
+Line: 320
+Key: MSG_PURGE_FILAMENT_P
+Original: Purge filament {prutok} {filament_type}
+--------------------------------------------------------------------------------
+Line: 344
+Key: MSG_UNLOADING_FILAME
+Original: Unloading filament {prutok} {filament_type}
+--------------------------------------------------------------------------------
+Line: 349
+Key: MSG_HEATING_THE_NO_1
+Original: Heating the nozzle to {extruder_temp} degrees
+--------------------------------------------------------------------------------
+Line: 401
+Key: MSG_EXTRACTING_FILAM
+Original: Extracting filament from the extruder {prutok} {filament_type}
+--------------------------------------------------------------------------------
+Line: 405
+Key: MSG_RESTORE_STATE_CH
+Original: Restore state: change_filament_after_xyz_move
+--------------------------------------------------------------------------------
